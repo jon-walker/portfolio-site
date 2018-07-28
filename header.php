@@ -22,10 +22,8 @@
 			<nav>
 				<ul>
 					<li class="nav-logo"><img src="images/logo-icon.png" alt="logo" title="logo"></li>
-					<li><a href="#home" class="smoothScroll">Home</a></li>
-					<li><a href="#pj-wrapper" class="smoothScroll">Projects</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<!-- Since php will inject an extra div around the actually menu links you will need to adjust CSS selectors accordingly. -->
+					<?php html5blank_nav(); ?>
 				</ul>
 			</nav>
 		</header>
