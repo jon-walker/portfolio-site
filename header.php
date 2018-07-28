@@ -18,3 +18,14 @@
 
 	</head>
 	<body <?php body_class(); ?>>
+		<header>
+			<nav>
+				<ul>
+					<li class="nav-logo"><img src="images/logo-icon.png" alt="logo" title="logo"></li>
+					<li><a href="#home" class="smoothScroll">Home</a></li>
+					<li><a href="#pj-wrapper" class="smoothScroll">Projects</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
