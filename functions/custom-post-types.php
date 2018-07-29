@@ -13,15 +13,15 @@ function create_post_type_projects()
             'name' => __('Projects', 'jw_projects'), // Rename these to suit
             'singular_name' => __('Project', 'jw_projects'),
             'add_new' => __('Add New', 'jw_projects'),
-            'add_new_item' => __('Add New HTML5 Blank Custom Post', 'jw_projects'),
+            'add_new_item' => __('Add New Project', 'jw_projects'),
             'edit' => __('Edit', 'jw_projects'),
-            'edit_item' => __('Edit HTML5 Blank Custom Post', 'jw_projects'),
-            'new_item' => __('New HTML5 Blank Custom Post', 'jw_projects'),
-            'view' => __('View HTML5 Blank Custom Post', 'jw_projects'),
-            'view_item' => __('View HTML5 Blank Custom Post', 'jw_projects'),
-            'search_items' => __('Search HTML5 Blank Custom Post', 'jw_projects'),
-            'not_found' => __('No HTML5 Blank Custom Posts found', 'jw_projects'),
-            'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'jw_projects')
+            'edit_item' => __('Edit Project', 'jw_projects'),
+            'new_item' => __('New Project', 'jw_projects'),
+            'view' => __('View Projects', 'jw_projects'),
+            'view_item' => __('View Project', 'jw_projects'),
+            'search_items' => __('Search Projects', 'jw_projects'),
+            'not_found' => __('No Projects Found', 'jw_projects'),
+            'not_found_in_trash' => __('No Projects Found in Trash', 'jw_projects')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
@@ -34,7 +34,7 @@ function create_post_type_projects()
         ), // Go to Dashboard Custom HTML5 Blank post for supports
         'menu_icon' => 'dashicons-star-empty',   // http://www.kevinleary.net/wordpress-dashicons-list-custom-post-type-icons/
         'can_export' => true // Allows export in Tools > Export
-        'menu_position' => 5 // Sets Placement in WP Admin to after posts
+        'menu_position' => 5 // Sets Placement in WP Admin to just after posts
     ));
     register_taxonomy(
         'jw_skills',    // Taxonomy
