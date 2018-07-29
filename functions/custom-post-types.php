@@ -33,7 +33,7 @@ function create_post_type_projects()
             'thumbnail'
         ), // Go to Dashboard Custom HTML5 Blank post for supports
         'menu_icon' => 'dashicons-star-empty',   // http://www.kevinleary.net/wordpress-dashicons-list-custom-post-type-icons/
-        'can_export' => true // Allows export in Tools > Export
+        'can_export' => true, // Allows export in Tools > Export
         'menu_position' => 5 // Sets Placement in WP Admin to just after posts
     ));
     register_taxonomy(
