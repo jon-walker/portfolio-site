@@ -112,8 +112,9 @@ function html5blank_conditional_scripts()
 // Load HTML5 Blank styles
 function html5blank_styles()
 {
-    wp_register_style('ahha-styles', get_template_directory_uri() . '/assets/dist/css/main.css', array(), '1.0', 'all');
-    wp_enqueue_style('ahha-styles'); // Enqueue it!
+    // Primary Stylesheet - Stylesheets from plugins prepended to main.css
+    wp_register_style('jw-styles', get_template_directory_uri() . '/css/main.min.css', array(), '1.0', 'all');
+    wp_enqueue_style('jw-styles');
 }
 
 // Register HTML5 Blank Navigation
@@ -401,6 +402,3 @@ remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altoget
  	)); */
 
  }
-
-
-// TODO: INCLUDE AH HA CREATIVE BRANDED LOGIN SCREEN

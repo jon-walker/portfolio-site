@@ -1,3 +1,7 @@
+.editorconfig
+
+*.map
+
 main.min.js.map
 
 prepros-6.config
