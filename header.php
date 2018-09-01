@@ -30,7 +30,7 @@
 		<header>
 			<nav>
 				<ul>
-					<li class="nav-logo"><img src="images/logo-icon.png" alt="logo" title="logo"></li>
+					<li class="nav-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-icon.png" alt="logo" title="logo"></li>
 					<!-- Since php will inject an extra div around the actual menu links you will need to adjust CSS selectors accordingly. -->
 					<?php html5blank_nav(); ?>
 				</ul>
