@@ -27,12 +27,7 @@
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSPS99N"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
-		<header>
-			<nav>
-				<ul>
-					<li class="nav-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-icon.png" alt="logo" title="logo"></li>
-					<!-- Since php will inject an extra div around the actual menu links you will need to adjust CSS selectors accordingly. -->
-					<?php html5blank_nav(); ?>
-				</ul>
-			</nav>
+		<header class="main-menu">
+            <p class="nav-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-icon.png" alt="logo" title="logo"></p>
+			<?php html5blank_nav(); ?>
 		</header>
