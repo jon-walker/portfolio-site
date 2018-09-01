@@ -7,10 +7,10 @@ get_header(); ?>
 <h1>I'm Jon, A Digital Marketer and Web Designer.</h1>
 
 <section class="bkg splash" id="home">
-	<p><img class="logo" src="<?= get_template_directory_uri(); ?>/images/logo.png" alt="Jonathan Walker"></p>
+	<p><img class="logo" src="<?= get_template_directory_uri(); ?>/img/logo.png" alt="Jonathan Walker"></p>
 	<h2 class="tagline">Your Guide Through a Digital World</h2>
 	<p class="action"><a href="#pj-wrapper" class="smoothScroll">See For Yourself</a></p>
-	<p class="action "><a href="#home_intro" class="smoothScroll"><img class="action arrow-bounce" src="<?= get_template_directory_uri(); ?>/images/buttons/arrow-dn.png" alt="Learn More About Jon." title="Learn More About Jon."></a></p>
+	<p class="action "><a href="#home_intro" class="smoothScroll"><img class="action arrow-bounce" src="<?= get_template_directory_uri(); ?>/img/buttons/arrow-dn.png" alt="Learn More About Jon." title="Learn More About Jon."></a></p>
 </section>
 
 <!-- **** Container **** -->

@@ -188,7 +188,7 @@ img.thumb {
 	max-width: 220px;
 }
 .bkg {
-	background-image: url(../images/bkg.jpg);
+	background-image: url(../img/bkg.jpg);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -228,7 +228,7 @@ img.arrow-bounce {
 /* -----------------------END Home Styles --------------------------------------*/
 /* -----------------------Project Styles --------------------------------------*/
 section.short {
-	background-image: url(../images/short-bkg.jpg);
+	background-image: url(../img/short-bkg.jpg);
 	background-attachment: fixed;
 	background-position: top center;
 	background-repeat: no-repeat;
@@ -366,7 +366,7 @@ label {
 	text-align: center;
 }
 #reset {
-	background-image: url(../images/buttons/reset.png);
+	background-image: url(../img/buttons/reset.png);
 	background-size: cover;
 	background-color: rgb(2,10,16);
 	width: 4rem;
@@ -378,7 +378,7 @@ label {
 	background-position: bottom;
 }
 #send {
-	background-image: url(../images/buttons/send.png);
+	background-image: url(../img/buttons/send.png);
 	background-size: cover;
 	background-color: rgb(2,10,16);
 	width: 6rem;
