@@ -1,14 +1,14 @@
 <!-- sidebar -->
-<aside class="sidebar" role="complementary">
+<aside class="sidebar">
 
 	<?php get_template_part('partials/searchform'); ?>
 
 	<div class="sidebar-widget">
-		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?>
+		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('blog-widgets')) ?>
 	</div>
 
 	<div class="sidebar-widget">
-		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
+		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('project-widgets')) ?>
 	</div>
 
 </aside>

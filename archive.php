@@ -1,19 +1,15 @@
 <?php get_header(); ?>
 
-	<main role="main">
-		<!-- section -->
-		<section>
+<h1><?php _e( 'Archives', 'html5blank' ); ?></h1>
 
-			<h1><?php _e( 'Archives', 'html5blank' ); ?></h1>
+<main>
 
-			<?php get_template_part('partials/loop'); ?>
+	<?php get_template_part('partials/loop'); ?>
 
-			<?php get_template_part('partials/pagination'); ?>
+	<?php get_template_part('partials/pagination'); ?>
 
-		</section>
-		<!-- /section -->
-	</main>
+</main>
 
-<?php get_sidebar(); ?>
+<?php dynamic_sidebar('blog-widgets'); ?>
 
 <?php get_footer(); ?>
