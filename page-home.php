@@ -19,6 +19,11 @@ get_header(); ?>
 	<!--****  Content Section ****-->
 	<section id="home_intro">
 		<!-- WP Loop Here Pulls Editor Content -->
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+		// Gutenberg should output the content in the appropriate HTMLtag double check output to ensure correct tags added.
+		the_content();
+		endwhile;
+		endif;?>
 	</section>
 
 	<!--**** Projects Index ****-->
