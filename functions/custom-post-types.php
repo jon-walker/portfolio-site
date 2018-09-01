@@ -7,21 +7,21 @@
 function create_post_type_projects()
 {
 
-    register_post_type('jw_projects', // Register Custom Post Type
+    register_post_type('projects', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('Projects', 'jw_projects'), // Rename these to suit
-            'singular_name' => __('Project', 'jw_projects'),
-            'add_new' => __('Add New', 'jw_projects'),
-            'add_new_item' => __('Add New Project', 'jw_projects'),
-            'edit' => __('Edit', 'jw_projects'),
-            'edit_item' => __('Edit Project', 'jw_projects'),
-            'new_item' => __('New Project', 'jw_projects'),
-            'view' => __('View Projects', 'jw_projects'),
-            'view_item' => __('View Project', 'jw_projects'),
-            'search_items' => __('Search Projects', 'jw_projects'),
-            'not_found' => __('No Projects Found', 'jw_projects'),
-            'not_found_in_trash' => __('No Projects Found in Trash', 'jw_projects')
+            'name' => __('Projects', 'projects'), // Rename these to suit
+            'singular_name' => __('Project', 'projects'),
+            'add_new' => __('Add New', 'projects'),
+            'add_new_item' => __('Add New Project', 'projects'),
+            'edit' => __('Edit', 'projects'),
+            'edit_item' => __('Edit Project', 'projects'),
+            'new_item' => __('New Project', 'projects'),
+            'view' => __('View Projects', 'projects'),
+            'view_item' => __('View Project', 'projects'),
+            'search_items' => __('Search Projects', 'projects'),
+            'not_found' => __('No Projects Found', 'projects'),
+            'not_found_in_trash' => __('No Projects Found in Trash', 'projects')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
@@ -39,7 +39,7 @@ function create_post_type_projects()
     ));
     register_taxonomy(
         'jw_skills',    // Taxonomy
-        'jw_projects',  // Object Type
+        'projects',  // Object Type
         array(
             'label' => __( 'Skills' ),
             'rewrite' => array( 'slug' => 'Skill' ),
