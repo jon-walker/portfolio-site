@@ -14,6 +14,8 @@ else: ?>
 
 <?php endif; ?>
 
+<?php dynamic_sidebar('project-widgets'); ?>
+
 <!-- **** View More Section **** -->
 <aside class="pj_view-more">
 	<h2>Where To Next?</h2>
