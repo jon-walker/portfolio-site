@@ -264,6 +264,18 @@ function enable_threaded_comments()
     }
 }
 
+// Project Introduction Meta Box
+function add_pj_meta_box() {
+	add_meta_box(
+		'pj_meta_box', // $id
+		'Project Intro', // $title
+		'show_pj_fields_meta_box', // $callback
+		'projects', // $screen
+		'normal', // $context
+		'high' // $priority
+	);
+}
+
 // Custom Comments Callback
 function html5blankcomments($comment, $args, $depth)
 {
@@ -321,6 +333,7 @@ add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
 add_action('init', 'create_post_type_projects'); // Add our HTML5 Blank Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
+add_action( 'add_meta_boxes', 'add_pj_meta_box' ); // Add Project Intro Meta Box to Projects Post Type
 
 // Remove Actions
 remove_action('wp_head', 'feed_links_extra', 3); // Display the links to the extra feeds such as category feeds
