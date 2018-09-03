@@ -5,6 +5,14 @@
 <!-- Use h1 as container to hold header styles-->
 <h1><?php the_title(); ?></h1>
 
+<p class="pj_intro">
+	<?php
+	$meta = get_post_meta( $post->ID, 'pj_fields', true ); // Allows loop to access custom meta
+	if (is_array($meta) && isset($meta['textarea'])){
+		echo $meta['textarea']; }
+	?>
+</p>
+
 <?php get_template_part('partials/skills'); ?>
 
 <?php the_content(); ?>
