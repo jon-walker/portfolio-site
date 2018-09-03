@@ -13,18 +13,17 @@
 	?>
 </p>
 
-<?php get_template_part('partials/skills'); ?>
+<?php get_template_part('partials/skills');
 
-<?php the_content(); ?>
-
-<?php endwhile;
+the_content();
+endwhile;
 else: ?>
 
 <h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
 
-<?php endif; ?>
+<?php endif;
 
-<?php dynamic_sidebar('project-widgets'); ?>
+dynamic_sidebar('project-widgets'); ?>
 
 <!-- **** View More Section **** -->
 <aside class="pj_view-more">
