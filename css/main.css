@@ -703,3 +703,28 @@ img.contact-icon {
 			margin-top: 10px;
 		}
 	}
+
+/* **** Project Archives **** */
+article.projects {
+    position: relative;
+}
+
+.projects_skills {
+    list-style: none;
+    display: flex;
+    align-items: bottom;
+    position: absolute; /* Prevents article below from shifting on icon hover*/
+}
+
+li.pj_skills_icon {
+    width: 4em;
+    transition: width 0.75s ease;
+}
+li.pj_skills_icon:hover {
+    transition: width 0.5s ease;
+    width: 4.75em;
+}
+
+.pj_skills_icon a {
+    width: 100%;
+}
