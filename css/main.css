@@ -144,6 +144,22 @@ li.nav-logo img{
 	display: none;
 	vertical-align: middle;
 }
+
+/* Temp */
+p.nav-logo {
+    display: inline-block;
+    padding: 0;
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: 60%;
+}
 /* -----------------------END Nav Styles --------------------------------------*/
 /* -----------------------Home Styles --------------------------------------*/
 section.splash p {
