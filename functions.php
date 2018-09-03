@@ -276,6 +276,48 @@ function add_pj_meta_box() {
 	);
 }
 
+function show_pj_fields_meta_box() {
+    global $post;
+        $meta = get_post_meta( $post->ID, 'pj_fields', true); ?>
+    <input type="hidden" name="pj_meta_box_nonce" value="<?php echo wp_create_nonce( basename(__FILE__) ); ?>">
+
+    <p>
+	<label for="your_fields[textarea]" style="position: relative; top: -0.5em; font-weight: bolder;">Enter text that will appear at the top of the project page.</label>
+	<br>
+	<textarea name="pj_fields[textarea]" id="pj_fields[textarea]" rows="5" cols="30" style="width:100%;"><?php echo $meta['textarea']; ?></textarea>
+    </p>
+
+<?php
+}
+
+function save_pj_fields_meta( $post_id ) {
+	// verify nonce
+	if ( !wp_verify_nonce( $_POST['pj_meta_box_nonce'], basename(__FILE__) ) ) {
+		return $post_id;
+	}
+	// check autosave
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+		return $post_id;
+	}
+	// check permissions
+	if ( 'projects' === $_POST['post_type'] ) {
+		if ( !current_user_can( 'edit_page', $post_id ) ) {
+			return $post_id;
+		} elseif ( !current_user_can( 'edit_post', $post_id ) ) {
+			return $post_id;
+		}
+	}
+
+	$old = get_post_meta( $post_id, 'pj_fields', true );
+	$new = $_POST['pj_fields'];
+
+	if ( $new && $new !== $old ) {
+		update_post_meta( $post_id,  'pj_fields', $new );
+	} elseif ( '' === $new && $old ) {
+		delete_post_meta( $post_id,  'pj_fields', $old );
+	}
+}
+
 // Custom Comments Callback
 function html5blankcomments($comment, $args, $depth)
 {
@@ -334,6 +376,7 @@ add_action('init', 'create_post_type_projects'); // Add our HTML5 Blank Custom P
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 add_action( 'add_meta_boxes', 'add_pj_meta_box' ); // Add Project Intro Meta Box to Projects Post Type
+add_action( 'save_post', 'save_pj_fields_meta' ); // Save Project Intro to Database
 
 // Remove Actions
 remove_action('wp_head', 'feed_links_extra', 3); // Display the links to the extra feeds such as category feeds
