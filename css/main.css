@@ -18,18 +18,15 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
-/* ------------------Colors and Fonts Reference ---------------------------
-***COLOR PALETTE
-black = rgb(2,10,16)
-white = rgb(254,254,254)
-yellow accents = rgb(244,182,61)
-green - rgb(21,41,22)
-
-***FONTS
-font-family: 'quattrocento', sans-serif;
-font-family: 'black-bamboo', 'quattrocento', sans-serif;
----------------------------END Reference --------------------------------*/
-/* -----------------------Basic Styles ----------------------------------*/
+/* COLOR PALETTE
+ *
+ * black = rgb(2,10,16)
+ * white = rgb(254,254,254)
+ * yellow accents = rgb(244,182,61)
+ * green - rgb(21,41,22)
+ *
+ */
+/* ========== Basic Styles ========== */
 body {
 	font-family: 'quattrocento';
 	background-color: rgb(2,10,16);
@@ -40,7 +37,7 @@ main {
 	max-width: 505px;
 	margin: 0 auto 20%;
 	background-color: rgb(2,10,16);
-	position: relative; /*Allows aurora to have absolute position*/
+	position: relative;
 }
 section {
 	margin: 0 0 10%;
@@ -112,16 +109,15 @@ img {
 .space-top {
 	margin-top: 20%;
 }
-/* -----------------------END Basic Styles --------------------------------*/
-/* -----------------------Nav Styles --------------------------------------*/
+
+/* ========== Nav Styles ========== */
 header {
 	width: 96%;
 	background-color: rgba(2,10,16,.8);
 	padding: 2% 2.5%;
 	position: fixed;
 	top: 0;
-	z-index: 1;
-	/*Prevents it from sliding under gallery*/
+	z-index: 1;	/*Prevents it from sliding under gallery*/
 }
 nav ul {
 	width: 100%;
@@ -160,14 +156,13 @@ p.nav-logo {
 nav {
     width: 60%;
 }
-/* -----------------------END Nav Styles --------------------------------------*/
-/* -----------------------Home Styles --------------------------------------*/
+/* ========== Home Styles ========== */
 section.splash p {
 	width: 85%;
 	margin: auto;
 	text-align: center;
 }
-section.teaser {
+/*section.teaser {
 	margin-bottom: 0;
 	padding: 2% 3% 4%;
 }
@@ -181,7 +176,7 @@ section.teaser div {
 	display: inline-block;
 	vertical-align: top;
 	padding-left: 3%;
-}
+}*/
 p.action {
 	padding: 2%;
 }
@@ -241,8 +236,8 @@ img.arrow-bounce {
 	margin: 0;
 	float: left;
 }
-/* -----------------------END Home Styles --------------------------------------*/
-/* -----------------------Project Styles --------------------------------------*/
+/* ========== END Home Styles  ========== */
+/* ========== Project Styles  ========== */
 section.short {
 	background-image: url(../img/short-bkg.jpg);
 	background-attachment: fixed;
@@ -264,22 +259,6 @@ section.short h3 {
 	width: 100%;
 	text-align: center;
 }
-.vert p {
-	padding: 0;
-	display: inline-block;
-	width: 35%;
-	min-width: 240px; /*Prevents skills icons from getting too small on mobile screens*/
-	max-width: 250px; /*-Max width allows number of skills in row to automatically adjust to fit the most possible in a row*/
-}
-section.vert p img {
-	vertical-align: middle;
-	width: 25%;
-	max-width: 90px;
-}
-video {
-	width: 100%;
-	max-width: 320px;
-}
 .mini {
 	width: 5%;
 	min-width: 35px;
@@ -289,19 +268,13 @@ video {
 .skill {
 	padding-top: 0;
 }
-.faux-sect {
-	padding: 3%;
-}
-aside section.teaser {
+/*aside section.teaser {
 	padding: 3% 3% 3% 0;
-}
+}*/
 .align-rt {
 	text-align: right;
 	margin-right: 12%;
 	margin-bottom: 6%;
-}
-.vid-width {
-	max-width: 320px;
 }
 .css-pix {
 	text-align: center;
@@ -314,10 +287,10 @@ aside section.teaser {
 .glow {
 	box-shadow: 0 0 15px 0 rgba(254,254,254,.3);
 }
-section.teaser p.width-adj, #projects p {
+/*section.teaser p.width-adj, #projects p {
 	width: 100%;
 	padding-bottom: 6%;
-}
+}*/
 #team {
 	padding-top: 6%;
 }
@@ -354,8 +327,8 @@ section.teaser p.width-adj, #projects p {
 #css-vid h2 {
 	display: none;
 }
-/* -----------------------END Project Styles --------------------------------------*/
-/* -----------------------Contact Styles --------------------------------------*/
+/* ========== END Project Styles ========== */
+/* ========== Contact Styles ========== */
 form {
 	max-width: 500px;
 	margin: 40% auto 0;
@@ -418,8 +391,8 @@ img.contact-icon {
 	max-width: 90px;
 	vertical-align: middle;
 }
-/* -----------------------END Contact Styles --------------------------------------*/
-/* -----------------------Media Query (more than 450px) --------------------------------------*/
+/* ========== END Contact Styles ========== */
+/* ========== Media Query (more than 450px) ========== */
 @media (min-width: 450px) {
 	header {
 		padding: 0 2.5%;
@@ -453,8 +426,8 @@ img.contact-icon {
 		margin-top: 14%;
 	}
 }
-/* -----------------------END Media Query (more than 450px) ----------------------------------*/
-/* -----------------------Media Query (more than 700px) --------------------------------------*/
+/* ========== END Media Query (more than 450px) ========== */
+/* ========== Media Query (more than 700px)  ========== */
 @media (min-width: 700px) {
 	main {
 		width: 75%;
@@ -476,10 +449,10 @@ img.contact-icon {
 	h2, p {
 		padding-left: 0;
 	}
-	section.teaser {
+	/*section.teaser {
 		float: left;
 		width: 27%;
-		min-height: 375px; /* Allows the floats to go all the way left when there are 2 rows*/
+		min-height: 375px; /* Allows the floats to go all the way left when there are 2 rows
 	}
 	section.teaser div {
 		width: 100%;
@@ -493,7 +466,7 @@ img.contact-icon {
 	}
 	aside section.teaser:nth-child(2) {
 		margin-left: 7%;
-	}
+	}*/
 	p.action {
 		padding: 0.5%;
 	}
@@ -552,8 +525,8 @@ img.contact-icon {
 		margin-bottom: 6%;
 	}
 }
-/* -----------------------END Media Query (more than 700px) ----------------------------------*/
-/* -----------------------Media Query (more than 850px) --------------------------------------*/
+/* ========== END Media Query (more than 700px) ========== */
+/* ========== Media Query (more than 850px)  ========== */
 @media (min-width: 850px) {
 	section.short h2 {
 		padding-top: 7%;
@@ -571,12 +544,12 @@ img.contact-icon {
 	#ai {
 		margin-bottom: 15%;
 	}
-	aside section.teaser {
+	/*aside section.teaser {
 		width: 23%;
 	}
 	aside section.teaser:nth-child(2) {
 		margin-left: 12%;
-	}
+	}*/
 	#css-vid {
 		padding-top: 7%;
 		width: 80%;
@@ -585,16 +558,16 @@ img.contact-icon {
 		padding-bottom: 11%;
 	}
 }
-/* -----------------------END Media Query (more than 850px) -----------------------------------*/
-/* -----------------------Media Query (more than 1000px) --------------------------------------*/
+/* ========== END Media Query (more than 850px) ========== */
+/* ========== Media Query (more than 1000px)  ========== */
 @media (min-width: 1000px) {
 	section.short h2 {
 		padding-top: 5%;
 		font-size: 2.4rem;
 	}
-	section.teaser {
+	/*section.teaser {
 		width: 16%;
-	}
+	}*/
 	article h2 {
 		font-size: 1.8rem;
 	}
@@ -647,22 +620,13 @@ img.contact-icon {
 		width: 30%;
 		float: left;
 	}
-	section.vert, .faux-sect {
-		padding: 0 3%;
-		width: 75%;
-		max-width: 1200px;
-		margin: auto;
-	}
-	section.vert p {
-		width: 20%;
-	}
 	/* These limit the size of the teasers on project pages only*/
-	aside section.teaser {
+	/*aside section.teaser {
 		width: 20%;
 	}
 	aside section.teaser:nth-child(2) {
 		margin-left: 16%;
-	}
+	}*/
 	.more-pj {
 		padding-top: 10%;
 	}
@@ -681,20 +645,20 @@ img.contact-icon {
 		min-height: 700px;
 	}
 }
-/* -----------------------END Media Query (more than 1000px) --------------------------------------*/
-/* -----------------------Media Query (more than 1300px) --------------------------------------*/
+/* ========== END Media Query (more than 1000px) ========== */
+/* ========== Media Query (more than 1300px) ========== */
 @media (min-width: 1300px) {
-	section.teaser {
+	/*section.teaser {
 		width: 14%;
 		padding: 2%;
-	}
+	}*/
 	#projects {
 		min-height: 350px;
 		margin-bottom: 10%;
 	}
 }
-/* ----------------------END Media Query (more than 1300px) --------------------------------------*/
-/* -----------------------Call to Action Animation -----------------------------------------------*/
+/* ========== END Media Query (more than 1300px)  ========== */
+/* ========== Call to Action Animation   -========== */
 @keyframes arrow-bounce {
 	0% {
 		margin-top: 0;
@@ -720,7 +684,7 @@ img.contact-icon {
 		}
 	}
 
-/* **** Project Archives **** */
+/* ========== Project Archives ========== */
 article.projects {
     position: relative;
 }
