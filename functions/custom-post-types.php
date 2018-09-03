@@ -44,6 +44,7 @@ function create_post_type_projects()
             'label' => __( 'Skills' ),
             'rewrite' => array( 'slug' => 'Skill' ),
             'hierarchical' => false, // Is this taxonomy hierarchical like categories or not hierarchical like tags.
+            'show_in_rest' => true,
         )
     );
 }
