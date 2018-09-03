@@ -24,3 +24,4 @@ The projects page is set to automatically add skills icons if certain tags are u
 
 * Add custom sidebar specifically for index pages to allow for filtering, etc.
 * Create custom block type to add sections to projects plus applicable classes. More information on creating custom Gutenberg blocks [here](https://wordpress.org/gutenberg/handbook/blocks/writing-your-first-block-type/).
+* Create custom block that allows images to be nested within other blocks.
