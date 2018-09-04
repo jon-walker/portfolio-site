@@ -58,7 +58,7 @@ function html5blank_nav()
 		'container_class' => 'menu-{menu slug}-container',
 		'container_id'    => '',
 		'menu_class'      => 'menu',
-		'menu_id'         => '',
+		'menu_id'         => 'main-menu',
 		'echo'            => true,
 		'fallback_cb'     => 'wp_page_menu',
 		'before'          => '',
@@ -75,10 +75,10 @@ function html5blank_nav()
 // Load HTML5 Blank scripts (header.php)
 function html5blank_header_scripts()
 {
-    if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
-        wp_register_script('ahha-js', get_template_directory_uri() . '/assets/dist/js/production.js', array('jquery'), '1.0.0', true); // Custom scripts
-        wp_enqueue_script('ahha-js'); // Enqueue it!
-    }
+    // if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
+    //     wp_register_script('ahha-js', get_template_directory_uri() . '/assets/dist/js/production.js', array('jquery'), '1.0.0', true); // Custom scripts
+    //     wp_enqueue_script('ahha-js'); // Enqueue it!
+    // }
 }
 
 // Load HTML5 Blank conditional scripts
