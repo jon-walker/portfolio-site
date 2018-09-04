@@ -26,11 +26,21 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
  * green - rgb(21,41,22)
  *
  */
+/* ========== Typography Styles ========== */
+body {
+    font-family: 'quattrocento', sans-serif;
+    color: rgb(254,254,254);
+}
+h1,
+h2,
+.action {
+    font-family: 'black-bamboo', 'quattrocento', sans-serif;
+    color: rgb(244,182,61);
+}
+
 /* ========== Basic Styles ========== */
 body {
-	font-family: 'quattrocento';
 	background-color: rgb(2,10,16);
-	color: rgb(254,254,254);
 	position: relative;
 }
 main {
@@ -63,13 +73,14 @@ figcaption {
 	padding: 1% 0 3%;
 	font-size: .8rem;
 }
-h1, .hide-all {
+.home h1,
+.hide-all,
+.hide {
 	display: none;
 }
+
 h2 {
-	font-family: 'black-bamboo', 'quattrocento', sans-serif;
 	font-size: 1.3rem;
-	color: rgb(244,182,61);
 	padding: 3% 0;
 }
 h2 a {
@@ -81,7 +92,7 @@ h3 {
 	padding: 0 0 3%;
 }
 p {
-	font-size: 1rem;
+	font-size: 1.1rem;
 	padding-bottom: 3%;
 }
 ul {
@@ -96,15 +107,16 @@ ol li {
 a:link {
 	color: rgb(244,182,61);
 }
-a:hover, a:visited, a:active, nav ul li a:hover {
+a:hover {
+    color: rgb(254,254,254);
+}
+a:visited,
+a:active {
 	color: rgba(244,182,61,.8);
 }
 img {
 	width: 100%;
 	max-width: 750px;
-}
-.hide {
-	display: none;
 }
 .space-top {
 	margin-top: 20%;
@@ -129,12 +141,15 @@ nav ul li {
 	display: inline;
 	padding: 0 2%;
 }
-nav ul li a:link, nav ul li a:visited {
+nav ul li a:link,
+nav ul li a:visited {
 	color: rgb(244,182,61);
 	text-decoration: none;
 }
-nav ul li a:hover, nav ul li a:active {
-	color: rgba(244,182,61,.8);
+nav ul li a:hover,
+nav ul li a:active {
+	color: rgb(254,254,254);
+    text-decoration: underline;
 }
 li.nav-logo img{
 	display: none;
@@ -214,7 +229,6 @@ img.thumb {
 	text-align: center;
 }
 .action {
-	font-family: 'black-bamboo', 'quattrocento', sans-serif;
 	font-size: 1.4rem;
 }
 img.arrow-bounce {
@@ -222,14 +236,6 @@ img.arrow-bounce {
 	animation-duration: 1s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
-		-webkit-animation-name: arrow-bounce;
-		-webkit-animation-duration: 1s;
-		-webkit-animation-iteration-count: infinite;
-		-webkit-animation-direction: alternate;
-		-moz-animation-name: arrow-bounce;
-		-moz-animation-duration: 1s;
-		-moz-animation-iteration-count: infinite;
-		-moz-animation-direction: alternate;
 }
 #projects {
 	padding: 20% 3% 10%;
@@ -334,7 +340,11 @@ form {
 	margin: 40% auto 0;
 	padding: 3%;
 }
-input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
 	display: block;
 	width: 98%;
 	padding: 1%;
@@ -688,14 +698,12 @@ img.contact-icon {
 article.projects {
     position: relative;
 }
-
 .projects_skills {
     list-style: none;
     display: flex;
     align-items: bottom;
     position: absolute; /* Prevents article below from shifting on icon hover*/
 }
-
 li.pj_skills_icon {
     width: 4em;
     transition: width 0.75s ease;
@@ -704,7 +712,6 @@ li.pj_skills_icon:hover {
     transition: width 0.5s ease;
     width: 4.75em;
 }
-
 .pj_skills_icon a {
     width: 100%;
 }
