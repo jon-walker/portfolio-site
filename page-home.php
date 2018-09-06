@@ -28,15 +28,11 @@ get_header(); ?>
 
 	<!--**** Projects Index ****-->
 	<section class="pj-index">
-		<h2>Latest Projects</h2>
-	<!-- Create New WP Query Here -->
-	<!-- Begin Loop which will run 3 times -->
-		<article>
-			<h3><a href="#">PJ TITLE</a></h3>
-			<p><img src="" alt=""></p>
-			<p>Learn More</p>
-		</article>
-	<!-- Close Loop and WP Query -->
+		<h2>See My Work</h2>
+	<!-- .pj_container -->
+		<?php get_template_part('partials/projects');
+        ?>
+	<!-- /.pj_container -->
 	</section>
 	<!-- ==== /section.pj-index ==== -->
 
