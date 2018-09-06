@@ -33,6 +33,6 @@ $(document).ready( function(){
     });
 
     // ACTIVATE SMOOTH SCROLL
-    $("a").smoothScroll();
+    $("a").smoothScroll({speed: 700,});
 
 })
