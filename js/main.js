@@ -1,4 +1,5 @@
 //@prepros-prepend unitegallery.js
+//@prepros-prepend jquery.smooth-scroll.js
 
 $(document).ready( function(){
 
@@ -30,5 +31,8 @@ $(document).ready( function(){
       $("nav#main-menu").toggleClass("mobile-nav_display");
 
     });
+
+    // ACTIVATE SMOOTH SCROLL
+    $("a").smoothScroll();
 
 })
