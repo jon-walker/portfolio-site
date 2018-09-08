@@ -123,14 +123,6 @@ img {
 }*/
 
 /* ========== Nav Styles ========== */
-header {
-	width: 96%;
-	background-color: rgba(2,10,16,.8);
-	padding: 2% 2.5%;
-	position: fixed;
-	top: 0;
-	z-index: 1;	/*Prevents it from sliding under gallery*/
-}
 nav ul {
 	width: 100%;
 	text-align: center;
@@ -182,7 +174,7 @@ nav {
   -webkit-padding-start: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
 	body {
 		overflow-x: hidden; /* Prevents horiz scrollbar from appearing */
@@ -190,20 +182,22 @@ nav {
 	.hamburger,
 	.hamburger__close {
 	  width: 2rem;
-	  position: absolute;
-	  top: 1rem;
-	  right: 1rem;
+      height: 2rem;
+      padding: 1rem;
+	  position: fixed;
+      top: 0.5rem;
+      right: 0.5rem;
 	  bottom: 1rem;
 	  cursor: pointer;
 	  display: block;
 	  z-index: 9981;
+      border-radius: 50%;
+      background: rgba(2, 10, 16, 0.6);
+      animation: spin-in 1s;
 	}
 	.nav_hide,
     p.nav-logo {
 	  display: none;
-	}
-	header {
-	  position: relative;
 	}
 	nav {
 	  position: fixed;
@@ -483,6 +477,11 @@ img.contact-icon {
 	}*/
 	header {
 		padding: 0 2%;
+    	width: 96%;
+    	background-color: rgba(2,10,16,.8);
+    	position: fixed;
+    	top: 0;
+    	z-index: 1;	/*Prevents it from sliding under gallery*/
 	}
 	nav ul {
 		padding: 0;
@@ -718,4 +717,16 @@ li.pj_skills_icon:hover {
 }
 .pj_skills_icon a {
     width: 100%;
+}
+
+/* ========== SPIN ANIMATION ========== */
+@keyframes spin-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+
 }
