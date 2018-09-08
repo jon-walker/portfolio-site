@@ -42,39 +42,31 @@ get_header(); ?>
 	<section class="home_skill home_img-right">
 		<h2 class="home_skill_title">Strategic Planning</h2>
 		<p>My work begins with trying to grasp the big picture. Where does the organization stand now? Where do we want to go? Research and analysis up front allow me to make better decisions moving forward.</p>
-		<!-- New WP Query - Pull PJ with tag of ___ -->
-		<article>
-			<h3><a href="#">PJ TITLE</a></h3>
-			<p><img src="" alt=""></p>
-			<p>Learn More</p>
-		</article>
-		<!-- Close WP Query -->
+
+		<figure>
+		    <img src="<?= get_template_directory_uri(); ?>/img/graph-doodle.png" alt="Planning">
+            <figcaption></figcaption>
+		</figure>
 	</section>
 
 	<!--**** Coding Highlight ****-->
 	<section class="home_skill home_img-left">
+        <figure>
+		    <img src="<?= get_template_directory_uri(); ?>/img/code-inspector.jpg" alt="Coding Robot Takes a Peek">
+            <figcaption></figcaption>
+		</figure>
 		<h2 class="home_skill_title">Coding Skills</h2>
 		<p>A good plan doesn't mean much if you can't execute it. Fortunately, I have a firm grip on coding languages like CSS, Javascript, and PHP. As a designer, I have built and maintained e-commerce sites for national brands. I even coded the WordPress theme for the site you are on now.</p>
-		<!-- New WP Query - Pull PJ with tag of ___ -->
-		<article>
-			<h3><a href="#">PJ TITLE</a></h3>
-			<p><img src="" alt=""></p>
-			<p>Learn More</p>
-		</article>
-		<!-- Close WP Query -->
 	</section>
 
 	<!--**** Graphics Highlight ****-->
 	<section class="home_skill home_img-right">
 		<h2 class="home_skill_title">Graphics Skills</h2>
 		<p>Visual impact matters, so you need a designer with graphic skills, too. As a graphic designer for Advantus, I design marketing materials for both print and web every day. I understand how to integrate all of the pieces into a compelling whole.</p>
-		<!-- New WP Query - Pull PJ with tag of ___ -->
-		<article>
-			<h3><a href="#">PJ TITLE</a></h3>
-			<p><img src="" alt=""></p>
-			<p>Learn More</p>
-		</article>
-		<!-- Close WP Query -->
+        <figure>
+		    <img src="<?= get_template_directory_uri(); ?>/img/graphics-doodle.jpg" alt="Graphics">
+            <figcaption></figcaption>
+		</figure>
 	</section>
 
 	<!--**** Closing Arugments ****-->
