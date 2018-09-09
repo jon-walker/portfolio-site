@@ -20,6 +20,15 @@ The projects page is set to automatically add skills icons if certain tags are u
 * SEO
 * SEM
 
+## Image Requirements
+
+To keep a consistent look, certain images on the page should have the following aspect ratios:
+
+* Blog Featured Images - 1:1 (Square)
+* Project Featured Images - 1:1
+* Project Section Images - 4:3 (Classic Video)
+    * Add background (rgb: 2, 10, 16) to "empty" areas if different aspect is absolutely needed.
+
 ## Future Improvements
 
 * Add custom sidebar specifically for index pages to allow for filtering, etc.
