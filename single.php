@@ -31,17 +31,22 @@
 
 			<?php the_content(); // Dynamic Content ?>
 
-			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+            <footer class="blog_footer">
+                <p class="blog_tags"><?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+                </p>
+    			<p class="blog_categories"><?php _e( 'Categories: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
+    			<p class="blog_author"><?php _e( 'Written by ', 'html5blank' ); the_author(); ?></p>
+            </footer>
 
-			<p><?php _e( 'Categories: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
-
-			<p><?php _e( 'Written by ', 'html5blank' ); the_author(); ?></p>
-
-			<?php comments_template(); ?>
 
 		</article>
 		<!-- /article -->
-
+        <!-- .blog_comments -->
+        <section class="blog_comments">
+            <!-- h2 is included within the comments template -->
+            <?php comments_template(); ?>
+        </section>
+        <!-- /.blog_comments -->
 	<?php endwhile; ?>
 
 	<?php else: ?>
