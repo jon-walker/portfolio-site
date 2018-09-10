@@ -43,23 +43,8 @@ body {
 	background-color: rgb(2,10,16);
 	position: relative;
 }
-/*main {
-	max-width: 505px;
-	margin: 0 auto 20%;
-	background-color: rgb(2,10,16);
-	position: relative;
-}
-section {
-	margin: 0 0 10%;
-	padding: 3%;
-}
-article{
-	margin: 10% 0;
-}*/
-
 footer {
 	text-align: center;
-	clear: both;
 }
 figure {
 	width: 100%;
@@ -187,8 +172,6 @@ li.nav-logo img{
 	display: none;
 	vertical-align: middle;
 }
-
-/* Temp */
 p.nav-logo {
     display: inline-block;
     padding: 0;
@@ -258,7 +241,7 @@ nav {
         margin: 1em;
 	}
 	nav.mobile-nav_display {
-	  right: 0 !important; /* !!!! Do not move because it depends on the cascade to work properly!!!! */
+	  right: 0 !important;
 	  top: 0;
 	  opacity: 1;
 	  transition: right 0.3s ease-in, opacity 0.3s ease-in;
@@ -274,7 +257,7 @@ section.splash p {
 .home_call-to-action {
     width: 100%;
     position: absolute;
-    top: calc(100vh - 6rem);
+    top: calc(100vh - 8rem);
 }
 p.home_action_text a:link {
 	text-decoration: none;
@@ -289,11 +272,8 @@ img.action {
 img.thumb {
 	max-width: 300px;
 }
-.features {
-	display: none;
-}
 .logo {
-	margin-top: 18%;
+	margin-top: 30%;
 	width: 60%;
 	max-width: 220px;
 }
@@ -308,7 +288,6 @@ img.thumb {
 .tagline {
 	font-family: 'quattrocento', sans-serif;
 	font-size: 1.1rem;
-	font-weight: normal;
 	color: rgb(254,254,254);
 	margin: 10% 0 20%;
 	text-align: center;
@@ -330,51 +309,8 @@ img.arrow-bounce {
 .pj h3 a:hover {
     text-decoration: underline;
 }
-/*#projects {
-	padding: 20% 3% 10%;
-	margin: 0;
-	float: left;
-}*/
 /* ========== END Home Styles  ========== */
 /* ========== Project Styles  ========== */
-/*section.short {
-	background-image: url(../img/short-bkg.jpg);
-	background-attachment: fixed;
-	background-position: top center;
-	background-repeat: no-repeat;
-	height: 25%;
-	min-height: 160px;
-	margin: 0;
-	padding: 0;
-}*/
-/*section.short h2 {
-	padding: 20% 3% 0;
-	width: 94%;
-	text-align: center;
-	font-family: 'quattrocento', sans-serif;
-	font-size: 1.8rem;
-}
-section.short h3 {
-	width: 100%;
-	text-align: center;
-}*/
-/*.mini {
-	width: 5%;
-	min-width: 35px;
-	max-width: 50px;
-	vertical-align: middle;
-}
-.skill {
-	padding-top: 0;
-}
-.align-rt {
-	text-align: right;
-	margin-right: 12%;
-	margin-bottom: 6%;
-}
-.css-pix {
-	text-align: center;
-}*/
 .single-projects h1,
 .single h1 {
     margin: 1.1rem 0;
@@ -382,49 +318,11 @@ section.short h3 {
 .post-type-archive-projects article {
     padding-bottom: 5rem; /* Prevents img from covering skill icons */
 }
-.team-bio {
-	max-width: 220px;
-	vertical-align: top;
-	margin: 6% auto;
-}
 .glow {
 	box-shadow: 0 0 15px 0 rgba(254,254,254,.3);
 }
-#team {
-	padding-top: 6%;
-}
-#team p:first-of-type {
-	max-width: 600px;
-	margin: 0 auto 3%;
-	text-align: left;
-}
-#team h2 {
-	padding-bottom: 3%;
-}
 #gallery {
 	padding-bottom: 20%;
-}
-#ai h2, #ps h2, #fb h2, .pj h2 {
-	padding-bottom: 0;
-}
-.vid-container { /*Settings allow iframe to become responsive*/
-	position: relative;
-	padding-bottom: 56.27%;
-	padding-top: 35px;
-	height: 0;
-}
-.vid-container iframe { /*Settings allow iframe to become responsive*/
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-#css-vid {
-	width: 94%; /*Used to control Youtube video size Kids Guide to Wild FL*/
-}
-#css-vid h2 {
-	display: none;
 }
 p.pj_intro {
     padding-top: 5rem;
@@ -558,44 +456,18 @@ label {
 div.contact-info {
 	margin: 20% 0;
 }
-div.contact-info p {
-	float: left;
-	width: 100%;
-	padding-bottom: 0;
-}
-img.contact-icon {
-	width: 15%;
-	max-width: 90px;
-	vertical-align: middle;
-}
 /* ========== END Contact Styles ========== */
 /* ========== Media Query (more than 450px) ========== */
 @media (min-width: 450px) {
 	header {
 		padding: 0 2.5%;
 	}
-	/*section.short h2 {
-		padding-top: 14%;
-	}*/
 	li.nav-logo img {
 		display: inline;
 		width: 5%;
 		min-width: 35px;
 		max-width: 40px;
 	}
-	ul.features li {
-		font-size: .9rem;
-	}
-	/*form {
-		margin-top: 35%;
-	}
-	div.contact-info {
-		margin: 8% 0;
-	}
-	.features {
-		display: block;
-		list-style-type: none;
-	}*/
 	.tagline {
 		margin: 0 0 10%;
 	}
@@ -621,9 +493,6 @@ img.contact-icon {
 	nav ul {
 		padding: 0;
 	}
-	/*section.short h2 {
-		padding-top: 10%;
-	}*/
 	h2.tagline {
 		margin: 0 0 2%;
 		padding: 0;
@@ -644,58 +513,10 @@ img.contact-icon {
 		max-width: 300px;
 		margin-top: 12%;
 	}
-	/*.wqop-logo, .pj-pix, .css-pix {
-		width: 47%;
-		margin: 3% 0 3% 3%;
-		float: right;
-	}*/
-	/*.pj-txt {
-		width: 47%;
-	}
-	.vid-adj {
-		width: 12%;
-	}
-	.clr-rt {
-		clear: right;
-	}*/
-	/*.team-bio {
-		width: 40%;
-		margin: 0 2.5% 6%;
-		display: inline-block;
-	}
-	#team {
-		text-align: center;
-	}
-	#projects {
-		width: 27%;
-		max-width: 205px;
-		min-height: 750px;
-		padding-top: 2%;
-		margin-bottom: 10%;
-		vertical-align: top;
-	}*/
-	/*.bdr-rt {
-		border-right: solid 3px rgb(21,41,22);
-	}
-	.mrg-rt {
-		margin-right: 3%;
-		padding-left: 0;
-	}
-	#pj-wrapper {
-		padding-top: 10%;
-	}
-	#ps, #fb, #ai, .pj {
-		padding-top: 5%;
-		margin-bottom: 6%;
-	}*/
 }
 /* ========== END Media Query (more than 700px) ========== */
 /* ========== Media Query (more than 850px)  ========== */
 @media (min-width: 850px) {
-	/*section.short h2 {
-		padding-top: 7%;
-		font-size: 2.1rem;
-	}*/
 	h2.tagline {
 		font-size: 1.4rem;
 	}
@@ -705,24 +526,10 @@ img.contact-icon {
 	.team-bio {
 		width: 27%;
 	}
-	/*#ai {
-		margin-bottom: 15%;
-	}
-	#css-vid {
-		padding-top: 7%;
-		width: 80%;
-	}
-	#wild-fl {
-		padding-bottom: 11%;
-	}*/
 }
 /* ========== END Media Query (more than 850px) ========== */
 /* ========== Media Query (more than 1000px)  ========== */
 @media (min-width: 1000px) {
-	/*section.short h2 {
-		padding-top: 5%;
-		font-size: 2.4rem;
-	}*/
 	article h2 {
 		font-size: 1.8rem;
 	}
@@ -731,25 +538,6 @@ img.contact-icon {
 		/*height: 900px;*/
 		margin: auto;
 	}
-	/* This applies to contact page so margin doesn't push the floating elements down too far*/
-	/*main.top-fix {
-		margin-bottom: 10%;
-		width: 60%;
-	}*/
-	form {
-		float: left;
-		width: 50%;
-		margin-top: 0;
-	}
-	/*Eliminates space at top of contact text */
-	/*.space-top {
-		margin-top: 0;
-	}
-	.wqop-logo {
-		display: inline-block;
-		width: 50%;
-		max-width: 450px;
-	}*/
 	.logo {
 		width: 30%;
 		min-width: 300px;
@@ -766,44 +554,10 @@ img.contact-icon {
 		padding-right: 1%;
 		vertical-align: middle;
 	}
-	/*.screen-mock {
-		width: 50%;
-		float: left;
-		padding-right: 3%;
-	}
-	.shift-left {
-		width: 30%;
-		float: left;
-	}
-	.more-pj {
-		padding-top: 10%;
-	}
-	#ai, #ps, #fb, .pj {
-		height: 100vh;
-		padding-top: 18%;
-		margin: 0 auto;
-	}
-	#ai {
-		margin-top: 10%;
-	}
-	section#indesign {
-		margin-bottom: 3%;
-	}
-	#projects {
-		min-height: 700px;
-	}*/
 }
 /* ========== END Media Query (more than 1000px) ========== */
 /* ========== Media Query (more than 1300px) ========== */
 @media (min-width: 1300px) {
-	/*section.teaser {
-		width: 14%;
-		padding: 2%;
-	}*/
-	/*#projects {
-		min-height: 350px;
-		margin-bottom: 10%;
-	}*/
 }
 /* ========== END Media Query (more than 1300px)  ========== */
 /* ========== Call to Action Animation   -========== */
