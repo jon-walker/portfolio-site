@@ -13,7 +13,7 @@ if ($project_loop -> have_posts()) :
     <article class="pj">
         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
         <p><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></p>
-        <p><?php the_excerpt(); ?></p>
+        <p class="pj_see-more"><a href="<?php the_permalink(); ?>" target="_blank">Learn More</a></p>
     </article>
 
 <?php $i++; endwhile;
