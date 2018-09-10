@@ -11,6 +11,7 @@
 				<h2>
 					<a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'html5blank' ); ?></a>
 				</h2>
+                <p><img src="<?= get_template_directory_uri(); ?>/img/lost-robot.jpg" alt="Lost Robot"></p>
 
 			</article>
 			<!-- /article -->

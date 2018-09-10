@@ -854,6 +854,10 @@ li.pj_skills_icon:hover {
     width: 100%;
 }
 
+/* ========== 404 Page ========== */
+#post-404 h2 {
+    margin: 1rem;
+}
 /* ========== SPIN ANIMATION ========== */
 @keyframes spin-in {
     0% {
