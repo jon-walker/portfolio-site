@@ -9,8 +9,10 @@ get_header(); ?>
 <section class="bkg splash" id="home">
 	<p><img class="logo" src="<?= get_template_directory_uri(); ?>/img/logo.png" alt="Jonathan Walker"></p>
 	<h2 class="tagline">Your Guide Through a Digital World</h2>
-	<p class="action"><a href="#home_intro" class="smoothScroll">See For Yourself</a></p>
-	<p class="action "><a href="#home_intro" class="smoothScroll"><img class="action arrow-bounce" src="<?= get_template_directory_uri(); ?>/img/arrow-dn.png" alt="Learn More About Jon." title="Learn More About Jon."></a></p>
+    <div class="home_call-to-action">
+        <p class="home_action_text"><a href="#home_intro" class="smoothScroll">See For Yourself</a></p>
+    	<p class="home_action"><a href="#home_intro" class="smoothScroll"><img class="action arrow-bounce" src="<?= get_template_directory_uri(); ?>/img/arrow-dn.png" alt="Learn More About Jon." title="Learn More About Jon."></a></p>
+    </div>
 </section>
 
 <!-- **** Container **** -->
@@ -73,7 +75,7 @@ get_header(); ?>
 	<section class="home_skill home_img-right">
 		<h2 class="home_skill_title">Ready To Be Part of Your Team</h2>
 		<p>All that said, I know my limits, too. As you look around my site, please know that although I'm highlighting my work lots of talented people contributed. I have been a part of some great teams, and I can't wait to be a part of yours.</p>
-		<p class="home_contact_button">Contact Me</p>
+		<p class="home_contact button">Contact Me</p>
 	</section>
 	<!-- ==== /SKILLS FEATURES ==== -->
 

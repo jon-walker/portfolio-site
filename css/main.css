@@ -33,7 +33,7 @@ body {
 }
 h1,
 h2,
-.action {
+.home_action_text {
     font-family: 'black-bamboo', 'quattrocento', sans-serif;
     color: rgb(244,182,61);
 }
@@ -146,6 +146,7 @@ input#submit,
     color: rgb(244, 182, 61);
     font-family: 'black-bamboo','quattrocento', sans-serif;
     transition: color 1s border 1s filter 0.5s;
+    text-align: center;
 }
 button:hover,
 input#submit:hover,
@@ -270,14 +271,19 @@ section.splash p {
 	margin: auto;
 	text-align: center;
 }
-p.action {
-	padding: 2%;
+.home_call-to-action {
+    width: 100%;
+    position: absolute;
+    top: calc(100vh - 6rem);
 }
-p.action a:link {
+p.home_action_text a:link {
 	text-decoration: none;
 }
+.home_action {
+    width: 100%;
+}
 img.action {
-	width: 10%;
+	width: 8%;
 	max-width: 40px;
 }
 img.thumb {
@@ -297,6 +303,7 @@ img.thumb {
 	background-position: center;
 	background-repeat: no-repeat;
 	min-height: 100vh;
+    position: relative;
 }
 .tagline {
 	font-family: 'quattrocento', sans-serif;
@@ -306,9 +313,10 @@ img.thumb {
 	margin: 10% 0 20%;
 	text-align: center;
 }
-.action {
+.home_action_text {
 	font-size: 1.4rem;
 }
+.home_action
 img.arrow-bounce {
 	animation-name: arrow-bounce;
 	animation-duration: 1s;
@@ -514,6 +522,9 @@ form.search {
 .search .search-submit {
     margin-bottom: 1rem;
     margin-left: 1rem;
+}
+.sidebar-widget {
+    margin-top: 3rem;
 }
 /* ========== END Blog Styles ========== */
 /* ========== Contact Styles ========== */
