@@ -36,11 +36,11 @@ get_header(); ?>
 
 	<!--**** Strategic Planning Highlight ****-->
 	<section class="home_skill home_img-right">
-        <figure>
+        <figure  id="skill1">
 		    <img src="<?= get_template_directory_uri(); ?>/img/graph-doodle.png" alt="Planning">
             <figcaption></figcaption>
 		</figure>
-        <h2  id="skill1" class="home_skill_title">Strategic Planning</h2>
+        <h2 class="home_skill_title">Strategic Planning</h2>
 		<p>My work begins with trying to grasp the big picture. Where does the organization stand now? Where do we want to go? Research and analysis up front allow me to make better decisions moving forward.</p>
 	</section>
 
