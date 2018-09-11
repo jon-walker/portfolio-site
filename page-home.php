@@ -22,33 +22,26 @@ get_header(); ?>
 	<section id="home_intro">
 		<!-- WP Loop Here Pulls Editor Content -->
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-		// Gutenberg should output the content in the appropriate HTMLtag double check output to ensure correct tags added.
 		the_content();
 		endwhile;
 		endif;?>
+        <p class="home_cta">Where to Next?</p>
+        <div class="home_cta_buttons">
+            <p class="button"><a href="#skill1">Tell Me More</a></p>
+            <p class="button"><a href="<?php echo home_url(); ?>/projects/">Show Me Your Work</a></p>
+        </div>
 	</section>
-
-	<!--**** Projects Index ****-->
-	<section class="pj-index">
-		<h2>See My Work</h2>
-	<!-- .pj_container -->
-		<?php get_template_part('partials/projects');
-        ?>
-	<!-- /.pj_container -->
-	</section>
-	<!-- ==== /section.pj-index ==== -->
 
 	<!--******** SKILLS FEATURES BEGIN ********-->
 
 	<!--**** Strategic Planning Highlight ****-->
 	<section class="home_skill home_img-right">
-		<h2 class="home_skill_title">Strategic Planning</h2>
-		<p>My work begins with trying to grasp the big picture. Where does the organization stand now? Where do we want to go? Research and analysis up front allow me to make better decisions moving forward.</p>
-
-		<figure>
+        <figure>
 		    <img src="<?= get_template_directory_uri(); ?>/img/graph-doodle.png" alt="Planning">
             <figcaption></figcaption>
 		</figure>
+        <h2  id="skill1" class="home_skill_title">Strategic Planning</h2>
+		<p>My work begins with trying to grasp the big picture. Where does the organization stand now? Where do we want to go? Research and analysis up front allow me to make better decisions moving forward.</p>
 	</section>
 
 	<!--**** Coding Highlight ****-->
@@ -72,10 +65,10 @@ get_header(); ?>
 	</section>
 
 	<!--**** Closing Arugments ****-->
-	<section class="home_skill home_img-right">
+	<section class="home_skill">
 		<h2 class="home_skill_title">Ready To Be Part of Your Team</h2>
 		<p>All that said, I know my limits, too. As you look around my site, please know that although I'm highlighting my work lots of talented people contributed. I have been a part of some great teams, and I can't wait to be a part of yours.</p>
-		<p class="home_contact button">Contact Me</p>
+		<p class="home_contact button"><a href="<?php echo home_url(); ?>/contact/>">Contact Me</a></p>
 	</section>
 	<!-- ==== /SKILLS FEATURES ==== -->
 
