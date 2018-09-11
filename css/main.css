@@ -550,6 +550,10 @@ div.contact-info {
     .home_cta_buttons .button a {
         vertical-align: middle;
     }
+    .home_contact {
+        max-width: 220px;
+        margin: 1rem auto;
+    }
 	/*header {
 		padding: 0 2.5%;
 	}
@@ -605,6 +609,14 @@ div.contact-info {
 		max-width: 300px;
 		margin-top: 12%;
 	}
+    /* Home page */
+    .home section:not(.splash), aside {
+        margin: 2rem auto;
+        max-width: 800px;
+    }
+    .home_img-left, .home_img-right  {
+        grid-column-gap: 3rem;
+    }
 }
 /* ========== END Media Query (more than 700px) ========== */
 /* ========== Media Query (more than 850px)  ========== */
