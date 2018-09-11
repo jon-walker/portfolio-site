@@ -30,10 +30,12 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 body {
     font-family: 'quattrocento', sans-serif;
     color: rgb(254,254,254);
+    line-height: 1.4rem
 }
 h1,
 h2,
-.home_action_text {
+.home_action_text,
+.home_cta {
     font-family: 'black-bamboo', 'quattrocento', sans-serif;
     color: rgb(244,182,61);
 }
@@ -118,9 +120,13 @@ h1 {
     margin: 1.1rem;
 }
 button,
+input#submit {
+    padding: 0.5rem;
+}
+button,
 input#submit,
-.button {
-    padding: 0.5em;
+.button a {
+    padding: 0.5rem;
     border-radius: 7px;
     border: solid 3px rgb(244, 182, 61);
     background: none;
@@ -128,14 +134,15 @@ input#submit,
     font-family: 'black-bamboo','quattrocento', sans-serif;
     transition: color 1s border 1s filter 0.5s;
     text-align: center;
+    display:block;
 }
 button:hover,
 input#submit:hover,
-.button:hover {
+.button a:hover {
     filter: invert(30%);
     transition: filter 0.25s;
 }
-.button:active,
+.button a:active,
 input#submit:active,
 button:active {
     color: #000;
@@ -492,6 +499,50 @@ div.contact-info {
 /* ========== END Contact Styles ========== */
 /* ========== Media Query (more than 450px) ========== */
 @media (min-width: 550px) {
+    .home_img-left,
+    .home_img-right {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-column-gap: 1rem;
+    }
+    .home_img-left {
+        grid-template-columns: 1fr 2fr;
+    }
+    .home_img-right {
+        grid-template-columns: 2fr 1fr;
+    }
+    .home_img-left figure,
+    .home_img-right figure {
+        grid-row: 1 / 3;
+    }
+    .home_img-left figure {
+        grid-column: 1 / 2;
+    }
+    .home_img-right figure {
+        grid-column: 2 / 3;
+    }
+    .home_img-left p,
+    .home_img-left p {
+        grid-row: 2 / 3;
+        align-self: start;
+    }
+    .home_skill_title {
+        grid-row: 1 / 2;
+        align-self: end;
+    }
+    .home_cta_buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+    .home_cta_buttons .button {
+        width: 40%;
+        padding: 0.5rem;
+        margin: 1rem 0 2rem;
+        font-family: 'quattrocento', sans-serif;
+    }
+    .home_cta_buttons .button a {
+        vertical-align: middle;
+    }
 	/*header {
 		padding: 0 2.5%;
 	}
