@@ -61,7 +61,8 @@ figcaption {
 	display: none;
 }
 p + p,
-input#submit {
+input#submit,
+.home_cta_buttons {
     margin-top: 1rem;
 }
 h2 {
@@ -119,6 +120,7 @@ article + article {
 h1 {
     margin: 1.1rem;
 }
+/* Button Styles */
 button,
 input#submit {
     padding: 0.5rem;
@@ -149,6 +151,11 @@ button:active {
     border-color: rgb(2, 10, 16);
     filter: drop-shadow(0 0 5px #fff);
     transition: color 1s border 1s filter 0.5s;
+}
+.button a:link,
+.button a:visited,
+.button a:active {
+    text-decoration: none;
 }
 /* ========== Nav Styles ========== */
 nav ul {
