@@ -392,6 +392,54 @@ li.email a:link {
     color: rgb(254, 254, 254);
 }
 /* ========== END Project Styles ========== */
+/* ========== Blog Index Styles ========== */
+article {
+    position: relative;
+	overflow: hidden;
+    box-sizing: border-box;
+}
+.blog article h2,
+.date,
+.blog article p:last-child {
+    position: absolute;
+    box-sizing: border-box;
+}
+.blog article h2 {
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+    text-shadow: 1px 3px 5px rgba(2, 10, 16, 0.4);
+}
+.date {
+    bottom: 60%;
+    background: rgb(21,41,22);
+    padding: 0.75rem 3rem 0.75rem 1rem;
+    border-radius: 0 10px 10px 0;
+	z-index: 60;
+    left: -80%;
+}
+.blog article p:last-child {
+	background: rgba(2, 10, 16, 0.9);
+	top: 32%;
+    left: 105%;
+    width: calc(100% - 3rem);
+    padding: 3rem 2rem;
+    z-index: 50;
+    border-radius: 10px 0 0 10px;
+}
+.blog article:hover p:last-child {
+    left: 3rem;
+}
+.blog article:hover .date {
+    left: 0;
+}
+.blog article:hover .date,
+.date,
+.blog article p:last-child,
+.blog article:hover p:last-child {
+    transition: left 0.5s;
+}
+/* ========== END Blog Index Styles ========== */
 /* ========== Blog Styles ========== */
 ul.blog_post-meta li + li {
     margin-left: 1.5rem;

@@ -19,8 +19,8 @@
 
 	<!-- post details -->
 	<p class="date">
-		<time datetime="<?php the_time('Y-m-d'); ?> <?php the_time('H:i'); ?>">
-			<?php the_date(); ?> <?php the_time(); ?>
+		<time datetime="<?php the_time('Y-m-d'); ?>">
+			<?php echo get_the_date(); ?>
 		</time>
 	</p>
 	<!-- /post details -->
