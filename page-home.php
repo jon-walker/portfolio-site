@@ -37,7 +37,7 @@ get_header(); ?>
 	<!--**** Strategic Planning Highlight ****-->
 	<section class="home_skill home_img-right">
         <figure  id="skill1">
-		    <img src="<?= get_template_directory_uri(); ?>/img/graph-doodle.png" alt="Planning">
+		    <img src="<?= get_template_directory_uri(); ?>/img/strategy-doodle.jpg" alt="Planning the Perfect Design">
             <figcaption></figcaption>
 		</figure>
         <h2 class="home_skill_title">Strategic Planning</h2>

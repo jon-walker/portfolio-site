@@ -104,7 +104,7 @@ img {
 	max-width: 750px;
 }
 section:first-child {
-    padding-top: 2.5rem; /* Prevents hamburger menu from covering text  on smooth scroll */
+    padding-top: 2.5rem; /* Prevents hamburger menu from covering text on smooth scroll */
 }
 .home section:not(.splash),
 main,
@@ -127,7 +127,8 @@ input#submit {
 }
 button,
 input#submit,
-.button a {
+.button a:link,
+.button a:visited {
     padding: 0.5rem;
     border-radius: 7px;
     border: solid 3px rgb(244, 182, 61);
@@ -204,10 +205,9 @@ nav {
   margin: auto;
   -webkit-padding-start: 0;
 }
-
 @media (max-width: 700px) {
 	body {
-		overflow-x: hidden; /* Prevents horiz scrollbar from appearing */
+		overflow-x: hidden;
 	}
 	.hamburger,
 	.hamburger__close {
@@ -554,30 +554,10 @@ div.contact-info {
         max-width: 220px;
         margin: 1rem auto;
     }
-	/*header {
-		padding: 0 2.5%;
-	}
-	li.nav-logo img {
-		display: inline;
-		width: 5%;
-		min-width: 35px;
-		max-width: 40px;
-	}
-	.tagline {
-		margin: 0 0 10%;
-	}
-	.logo {
-		margin-top: 14%;
-	}*/
-
 }
 /* ========== END Media Query (more than 450px) ========== */
 /* ========== Media Query (more than 700px)  ========== */
 @media (min-width: 700px) {
-	/*main {
-		width: 75%;
-		max-width: none;
-	}*/
 	header {
 		padding: 0 2%;
     	width: 96%;
@@ -593,7 +573,8 @@ div.contact-info {
 		margin: 0 0 2%;
 		padding: 0;
 	}
-	h2, p {
+	h2,
+    p {
 		padding-left: 0;
 	}
 	p.action {
@@ -607,7 +588,7 @@ div.contact-info {
 		width: 35%;
 		min-width: 220px;
 		max-width: 300px;
-		margin-top: 12%;
+		margin-top: 20vh;
 	}
     /* Home page */
     .home section:not(.splash), aside {
@@ -624,12 +605,6 @@ div.contact-info {
 	h2.tagline {
 		font-size: 1.4rem;
 	}
-	.logo {
-		margin-top: 7%;
-	}
-	.team-bio {
-		width: 27%;
-	}
 }
 /* ========== END Media Query (more than 850px) ========== */
 /* ========== Media Query (more than 1000px)  ========== */
@@ -639,14 +614,12 @@ div.contact-info {
 	}
 	aside {
 		width: 85%;
-		/*height: 900px;*/
 		margin: auto;
 	}
 	.logo {
 		width: 30%;
 		min-width: 300px;
 		max-width: 380px;
-		margin-top: 5%;
 	}
 	.hide {
 		display: block;
@@ -689,7 +662,6 @@ div.contact-info {
 			margin-top: 10px;
 		}
 	}
-
 /* ========== Project Archives ========== */
 article.projects {
     position: relative;
@@ -711,7 +683,6 @@ li.pj_skills_icon:hover {
 .pj_skills_icon a {
     width: 100%;
 }
-
 /* ========== 404 Page ========== */
 #post-404 h2 {
     margin: 1rem;
@@ -725,5 +696,4 @@ li.pj_skills_icon:hover {
         opacity: 1;
         transform: rotate(360deg);
     }
-
 }
