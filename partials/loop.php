@@ -18,11 +18,11 @@
 	<!-- /post title -->
 
 	<!-- post details -->
-	<span class="date">
+	<p class="date">
 		<time datetime="<?php the_time('Y-m-d'); ?> <?php the_time('H:i'); ?>">
 			<?php the_date(); ?> <?php the_time(); ?>
 		</time>
-	</span>
+	</p>
 	<!-- /post details -->
 
 	<?php html5wp_excerpt('html5wp_index'); // Set custom length in functions.php
