@@ -65,17 +65,13 @@ input#submit,
 .home_cta_buttons {
     margin-top: 1rem;
 }
-h2 {
-	font-size: 1.3rem;
-	padding: 3% 0;
-}
 h2 a {
 	text-decoration: none;
 }
+h2,
 h3 {
-	font-size: 1.1rem;
-	font-weight: bold;
-	padding: 0 0 3%;
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 p {
 	font-size: 1.1rem;
@@ -87,8 +83,9 @@ ol {
 	padding: 0 3% 3%;
 }
 ol li {
-	padding: .25% .5%;
+	padding: 0.25% .5%;
 }
+/* Links */
 a:link {
 	color: rgb(244,182,61);
 }
@@ -119,6 +116,9 @@ article + article {
 }
 h1 {
     margin: 1.6rem;
+}
+main h1 {
+	margin-left: 0;
 }
 /* Button Styles */
 button,
@@ -537,7 +537,7 @@ form.search {
 .contact_intro,
 .contact_listings,
 .contact_form {
-    margin-top: 2.5rem;
+	margin: 2.5rem auto 0;
 }
 li.contact_email,
 li.contact_phone {
@@ -563,8 +563,9 @@ div.nf-error-msg,
 span.ninja-forms-req-symbol {
     color: rgb(244, 182, 61);
 }
-form {
-	max-width: 500px;
+.nf-form-fields-required {
+    margin-bottom: 1rem;
+    color: rgb(175,175,175);
 }
 input[type="text"],
 input[type="tel"],
@@ -572,7 +573,7 @@ input[type="email"],
 input[type="search"],
 select,
 textarea {
-	/*display: block;*/
+	display: block;
 	width: 100%;
 	padding: 0.5rem;
 	margin-bottom: 1rem;
@@ -653,6 +654,10 @@ label {
     	position: fixed;
     	top: 0;
     	z-index: 1;	/*Prevents it from sliding under gallery*/
+	}
+	main {
+	    width: 80%;
+	    margin: 15% auto 2%;
 	}
 	nav ul {
 		padding: 0;
