@@ -9,24 +9,22 @@
 	src: url(../fonts/black-bamboo.ttf) format('truetype');
 	/* The .eot & .woff files caused the font to render improperly. In IE fonts will fall back to quattrocento instead*/
 }
+/* ========== GLOBAL STYLES AND RESET RULES ========== */
 * {
 	margin: 0;
 	padding: 0;
 	border: 0;
+    box-sizing: border-box;
 }
-article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary, input, select, textarea, label {
     display:block;
 }
-
-/* COLOR PALETTE
- *
- * black = rgb(2,10,16)
- * white = rgb(254,254,254)
- * yellow accents = rgb(244,182,61)
- * green - rgb(21,41,22)
- *
- */
-/* ========== Typography Styles ========== */
+body {
+	background-color: rgb(2,10,16);
+	position: relative;
+}
+/* ========== END GLOBAL STYLES AND RESET RULES ========== */
+/* ========== Typography ========== */
 body {
     font-family: 'quattrocento', sans-serif;
     color: rgb(254,254,254);
@@ -39,35 +37,6 @@ h2,
     font-family: 'black-bamboo', 'quattrocento', sans-serif;
     color: rgb(244,182,61);
 }
-/* ========== Basic Styles ========== */
-body {
-	background-color: rgb(2,10,16);
-	position: relative;
-}
-footer {
-	text-align: center;
-}
-figure {
-	width: 100%;
-	max-width: 750px;
-}
-figcaption {
-	padding: 1% 0 3%;
-	font-size: .8rem;
-}
-.home h1,
-.hide-all,
-.hide {
-	display: none;
-}
-p + p,
-input#submit,
-.home_cta_buttons {
-    margin-top: 1rem;
-}
-h2 a {
-	text-decoration: none;
-}
 h2,
 h3 {
 	font-size: 1.5rem;
@@ -76,40 +45,31 @@ h3 {
 p {
 	font-size: 1.1rem;
 }
-ul {
-	padding: 1% 0;
+h2 a {
+	text-decoration: none;
 }
-ol {
-	padding: 0 3% 3%;
-}
-ol li {
-	padding: 0.25% .5%;
-}
-/* Links */
-a:link {
-	color: rgb(244,182,61);
-}
-a:hover {
-    color: rgb(254,254,254);
-}
-a:visited,
-a:active {
-	color: rgba(244,182,61,.8);
-}
-img {
-	width: 100%;
-	max-width: 750px;
+/* ========== END Typography ========== */
+/* ========== Basic Layout and Spacing ========== */
+/* Set up with the base layout immediately followed by any exceptions to the base layout */
+section {
+	margin: 2.5rem 0 1rem;
 }
 section:first-child {
     padding-top: 2.5rem; /* Prevents hamburger menu from covering text on smooth scroll */
 }
-.home section:not(.splash),
+main section {
+    margin: 0;
+}
 main,
 aside {
     margin: 1rem;
 }
-main section {
-    margin: 0;
+blockquote {
+    margin: 2rem;
+    border-left: solid 7px rgb(21, 41,22);
+}
+blockquote * {
+    margin-left: 2rem;
 }
 article + article {
     margin-top: 3rem;
@@ -120,7 +80,53 @@ h1 {
 main h1 {
 	margin-left: 0;
 }
-/* Button Styles */
+p + p,
+form,
+input#submit,
+.home_cta_buttons {
+    margin-top: 1rem;
+}
+ul {
+	margin: 1% 0;
+}
+ol {
+	margin: 0 3% 3%;
+}
+ol li {
+	margin: 0.25% .5%;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="search"],
+select,
+textarea {
+	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+}
+.home h1,
+.hide-all,
+.hide {
+	display: none;
+}
+img {
+	width: 100%;
+}
+/* ========== END Basic Layout and Spacing ========== */
+/* ========== Links Styles========== */
+a:link {
+	color: rgb(244,182,61);
+}
+a:hover {
+    color: rgb(254,254,254);
+}
+a:visited,
+a:active {
+	color: rgba(244,182,61,.8);
+}
+/* ========== END Link Styles ========== */
+/* ========== Button Styles ========== */
 button,
 input#submit,
 input[type="button"] {
@@ -162,6 +168,7 @@ button:active {
 .button a:active {
     text-decoration: none;
 }
+/* ========== END Button Styles ========== */
 /* ========== Nav Styles ========== */
 nav ul {
 	width: 100%;
@@ -199,7 +206,8 @@ p.nav-logo {
 nav {
     width: 60%;
 }
-/* ======== HAMBURGER MENU ========*/
+/* ========== END Nav Styles ========== */
+/* ======== Hamburger Menu Styles ========*/
 .hamburger,
 .hamburger__close {
 	display: none;
@@ -228,6 +236,7 @@ nav {
       border-radius: 50%;
       background: rgba(2, 10, 16, 0.6);
       animation: spin-in 1s;
+      box-sizing: content-box; /* Box-sizing will make it disappear */
 	}
 	.nav_hide,
     p.nav-logo {
@@ -259,6 +268,7 @@ nav {
 	  display: block;
 	}
 }
+/* ======== END Hamburger Menu Styles ========*/
 /* ========== Home Styles ========== */
 section.splash p {
 	width: 85%;
@@ -313,54 +323,6 @@ img.arrow-bounce {
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 }
-.pj h3 a:link,
-.pj h3 a:active {
-    text-decoration: none;
-}
-.pj h3 a:hover {
-    text-decoration: underline;
-}
-.pj_container {
-    display: flex;
-}
-/* Project Hover FX */
-article.pj {
-    overflow: hidden;
-    position: relative;
-}
-.home article + article{
-    margin-top:0;
-    margin-left: 0.25rem;
-}
-.pj h3 {
-    position: absolute;
-    top: 0;
-    background: rgba(30,64,43, 0.8);
-    width: 100%;
-    height: 30%;
-    padding: 0.5rem;
-    border-radius: 0 0 0 100%;
-    text-align: right;
-    font-family: 'black-bamboo', 'quattrocento', sans-serif;
-}
-.pj_see-more {
-    position: absolute;
-    top: 0;
-    padding: 40%;
-    border-radius: 50%;
-    height: 140%;
-    width: 140%;
-    background: rgba(21,41,22, 0.9);
-    text-align: left;
-    box-sizing: border-box;
-    transform: rotate(20deg) translate(25%, -100%);
-    transition: transform 1.2s;
-}
-article:hover > .pj_see-more {
-    top: 5%;
-    transform: rotate(0deg) translate(0, 0);
-    transition: transform 1.2s;
-}
 /* ========== END Home Styles  ========== */
 /* ========== Project Styles  ========== */
 .single-projects h1,
@@ -369,19 +331,6 @@ article:hover > .pj_see-more {
 }
 .post-type-archive-projects article {
     padding-bottom: 5rem; /* Prevents img from covering skill icons */
-}
-.glow {
-	box-shadow: 0 0 15px 0 rgba(254,254,254,.3);
-}
-#gallery {
-	padding-bottom: 20%;
-}
-p.pj_intro {
-    padding-top: 5rem;
-}
-ul.pj_view-more_contact {
-    list-style: none;
-    margin: 0.5rem 0 2rem;
 }
 img.pj_contact-icon {
     width: 4rem;
@@ -405,7 +354,6 @@ li.email a:link {
 article {
     position: relative;
 	overflow: hidden;
-    box-sizing: border-box;
 }
 .blog main article {
     margin: 0.25% 0.5%;
@@ -415,7 +363,6 @@ article {
 .date,
 .blog article p:last-child {
     position: absolute;
-    box-sizing: border-box;
 }
 .blog article h2 {
     top: 1rem;
@@ -567,21 +514,6 @@ span.ninja-forms-req-symbol {
     margin-bottom: 1rem;
     color: rgb(175,175,175);
 }
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-input[type="search"],
-select,
-textarea {
-	display: block;
-	width: 100%;
-	padding: 0.5rem;
-	margin-bottom: 1rem;
-    box-sizing: border-box;
-}
-select {
-	max-width: 280px;
-}
 textarea {
 	height: 100%;
 	min-height: 70px;
@@ -591,8 +523,34 @@ label {
     margin-bottom: 0.25rem;
     display: block;
 }
-
 /* ========== END Contact Styles ========== */
+/* ========== Project Archives ========== */
+article.projects {
+    position: relative;
+}
+.projects_skills {
+    list-style: none;
+    display: flex;
+    align-items: bottom;
+    position: absolute; /* Prevents article below from shifting on icon hover*/
+}
+li.pj_skills_icon {
+    width: 4em;
+    transition: width 0.75s ease;
+}
+li.pj_skills_icon:hover {
+    transition: width 0.5s ease;
+    width: 4.75em;
+}
+.pj_skills_icon a {
+    width: 100%;
+}
+/* ========== END Project Archives ========== */
+/* ========== 404 Page ========== */
+#post-404 h2 {
+    margin: 1rem;
+}
+/* ========== END 404 Page ========== */
 /* ========== Media Query (more than 450px) ========== */
 @media (min-width: 550px) {
     .home_img-left,
@@ -755,32 +713,8 @@ label {
 			margin-top: 10px;
 		}
 	}
-/* ========== Project Archives ========== */
-article.projects {
-    position: relative;
-}
-.projects_skills {
-    list-style: none;
-    display: flex;
-    align-items: bottom;
-    position: absolute; /* Prevents article below from shifting on icon hover*/
-}
-li.pj_skills_icon {
-    width: 4em;
-    transition: width 0.75s ease;
-}
-li.pj_skills_icon:hover {
-    transition: width 0.5s ease;
-    width: 4.75em;
-}
-.pj_skills_icon a {
-    width: 100%;
-}
-/* ========== 404 Page ========== */
-#post-404 h2 {
-    margin: 1rem;
-}
-/* ========== SPIN ANIMATION ========== */
+/* ========== END Call to Action Animation   -========== */
+/* ========== Spin Animation ========== */
 @keyframes spin-in {
     0% {
         opacity: 0;
@@ -790,3 +724,4 @@ li.pj_skills_icon:hover {
         transform: rotate(360deg);
     }
 }
+/* ========== END Spin Animation ========== */
