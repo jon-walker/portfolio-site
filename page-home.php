@@ -68,7 +68,7 @@ get_header(); ?>
 	<section class="home_skill">
 		<h2 class="home_skill_title">Ready To Be Part of Your Team</h2>
 		<p>All that said, I know my limits, too. As you look around my site, please know that although I'm highlighting my work lots of talented people contributed. I have been a part of some great teams, and I can't wait to be a part of yours.</p>
-		<p class="home_contact button"><a href="<?php echo home_url(); ?>/contact/>">Contact Me</a></p>
+		<p class="home_contact button"><a href="<?php echo home_url(); ?>/contact/">Contact Me</a></p>
 	</section>
 	<!-- ==== /SKILLS FEATURES ==== -->
 
