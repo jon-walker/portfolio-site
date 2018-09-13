@@ -275,6 +275,9 @@ section.splash p {
 	margin: auto;
 	text-align: center;
 }
+#container {
+    margin: 1.5rem;
+}
 .home_call-to-action {
     width: 100%;
     position: absolute;
