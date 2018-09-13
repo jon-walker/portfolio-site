@@ -102,8 +102,9 @@ input[type="search"],
 select,
 textarea {
 	width: 100%;
-	padding: 0.5rem;
+	padding: 0.75rem;
 	margin-bottom: 1rem;
+    box-shadow: inset 2px 3px 5px rgba(2, 10, 16, 0.3);
 }
 .home h1,
 .hide-all,
@@ -363,7 +364,7 @@ article {
 	width: 100%;
 }
 .blog article h2,
-.date,
+.blog .date,
 .blog article p:last-child {
     position: absolute;
 }
@@ -374,7 +375,7 @@ article {
     line-height: 2rem; /* Black Bamboo font is caps only so descenders don't worry about overlap */
     text-shadow: 1px 3px 5px rgba(2, 10, 16, 0.4);
 }
-.date {
+.blog .date {
     bottom: 60%;
     background: rgb(21,41,22);
     padding: 0.75rem 3rem 0.75rem 1rem;
@@ -405,13 +406,9 @@ article {
 }
 /* ========== END Blog Index Styles ========== */
 /* ========== Blog Styles ========== */
-ul.blog_post-meta li + li {
-    margin-left: 1.5rem;
-}
+
 ul.blog_post-meta {
     list-style: none;
-    display: flex;
-    justify-content: flex-start;
     margin-bottom: 2rem;
 }
 .blog_footer,
@@ -444,7 +441,9 @@ li.comment {
     margin-top: 3rem;
 }
 .single aside {
-    margin: 5rem 1rem 2rem;
+    background-color: rgb(21, 41, 22);
+    width: 90%;
+    margin: 2rem auto;
 }
 ul.children { /* Replies to other comments */
     margin-left: 3rem;
@@ -482,6 +481,25 @@ form.search {
 }
 .sidebar-widget {
     margin-top: 3rem;
+}
+.single .blog_post-meta {
+    justify-content: center;
+}
+.single .blog_post-meta li {
+    color: rgb(160, 160, 150);
+    margin-top: 0.25rem;
+}
+footer.blog_footer,
+.single aside {
+    padding: 1.5rem 1.5rem 2.5rem;
+    border-radius: 10px;
+    box-shadow: inset 2px 3px 5px rgba(20, 20, 20, 0.5);
+}
+footer.blog_footer {
+    background-color: rgba(205, 200, 220, 0.5);
+}
+.single aside {
+
 }
 /* ========== END Blog Styles ========== */
 /* ========== Contact Styles ========== */
@@ -556,6 +574,41 @@ li.pj_skills_icon:hover {
 }
 /* ========== END 404 Page ========== */
 /* ========== Media Query (more than 450px) ========== */
+@media (min-width: 450px) {
+    .blog_featured-img {
+        width: 14rem;
+    }
+    .blog_featured-img img {
+        border-radius: 50%;
+        box-shadow: inset 2px 3px 5px rgba(2, 10, 16, 0.5);
+    }
+    .single-projects h1,
+    .single h1 {
+        width:auto;
+        margin: 1.1rem 0;
+        position: absolute;
+        top: 3rem;
+        font-size: 2rem;
+        left: 8rem;
+        background: url(../img/star-fade-bkg.jpg) no-repeat;
+        padding: 2rem;
+        border-radius: 2px 0 0 2px;
+        text-shadow: 1px 1px 4px rgba(50, 50, 50, 0.3);
+        box-shadow: 2px 3px 5px rgba(2, 10, 16, 0.5);
+    }
+    ul.blog_post-meta {
+        display: flex;
+        justify-content: flex-start;
+    }
+    ul.blog_post-meta li + li {
+        margin-left: 1.5rem;
+    }
+    .single aside {
+        width: 80%;
+    }
+}
+/* ========== END Media Query (more than 450px) ========== */
+/* ========== Media Query (more than 550px) ========== */
 @media (min-width: 550px) {
     .home_img-left,
     .home_img-right {
