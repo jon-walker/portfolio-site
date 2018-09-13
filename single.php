@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 
 	<main>
+        <header class="blog_header">
+            <img class="blog_header_logo" src="<?= get_template_directory_uri(); ?>/img/blog-logo.png" alt="Jonathan Walker Designing Intelligently">
+        </header>
 
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -9,7 +12,7 @@
 
 			<!-- post thumbnail -->
             <div class="blog_featured-img">
-                <?php if ( has_post_thumbnail()) :               the_post_thumbnail(); endif; ?>
+                <?php if ( has_post_thumbnail()) : the_post_thumbnail(); endif; ?>
             </div>
 			<!-- /post thumbnail -->
 

@@ -406,7 +406,11 @@ article {
 }
 /* ========== END Blog Index Styles ========== */
 /* ========== Blog Styles ========== */
-
+.blog_header {
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
 ul.blog_post-meta {
     list-style: none;
     margin-bottom: 2rem;
@@ -576,22 +580,23 @@ li.pj_skills_icon:hover {
 /* ========== Media Query (more than 450px) ========== */
 @media (min-width: 450px) {
     .blog_featured-img {
-        width: 14rem;
+        width: 8rem;
     }
     .blog_featured-img img {
-        border-radius: 50%;
         box-shadow: inset 2px 3px 5px rgba(2, 10, 16, 0.5);
     }
     .single-projects h1,
     .single h1 {
-        width:auto;
-        margin: 1.1rem 0;
+        width: calc(100% - 8rem);
+        height: 8rem;
+        margin: 0;
         position: absolute;
-        top: 3rem;
-        font-size: 2rem;
+        top: 0;
         left: 8rem;
+        font-size: 2rem;
+        line-height: 2.3rem;
         background: url(../img/star-fade-bkg.jpg) no-repeat;
-        padding: 2rem;
+        padding: 1rem;
         border-radius: 2px 0 0 2px;
         text-shadow: 1px 1px 4px rgba(50, 50, 50, 0.3);
         box-shadow: 2px 3px 5px rgba(2, 10, 16, 0.5);
@@ -711,6 +716,10 @@ li.pj_skills_icon:hover {
     .blog main article {
     	width: 48%;
     }
+    .blog_header {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
 }
 /* ========== END Media Query (more than 700px) ========== */
 /* ========== Media Query (more than 850px)  ========== */
@@ -747,6 +756,13 @@ li.pj_skills_icon:hover {
     .blog main article {
     	width: 32%;
     }
+    .blog_header {
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 /* ========== END Media Query (more than 1000px) ========== */
 /* ========== Media Query (more than 1300px) ========== */
@@ -773,6 +789,10 @@ li.pj_skills_icon:hover {
     .single aside {
         grid-row: 2 / 3;
         grid-column: 9 / 12;
+    }
+    .blog_header {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
     }
 }
 /* ========== END Media Query (more than 1300px)  ========== */
