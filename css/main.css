@@ -350,7 +350,8 @@ li.email a:link {
 }
 /* ========== END Project Styles ========== */
 /* ========== Blog Index Styles ========== */
-.blog main {
+.blog main,
+.post-type-archive-projects main {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -363,6 +364,7 @@ article {
     margin: 0.25% 0.5%;
 	width: 100%;
 }
+/* Hover FX */
 .blog article h2,
 .blog .date,
 .blog article p:last-child {
@@ -405,6 +407,29 @@ article {
     transition: left 0.5s;
 }
 /* ========== END Blog Index Styles ========== */
+/* ========== Project Archives Styles========== */
+/* Note: Blog & Projects indexes share many styles */
+article.projects {
+    position: relative;
+}
+.projects_skills {
+    list-style: none;
+    display: flex;
+    align-items: bottom;
+    position: absolute; /* Prevents article below from shifting on icon hover*/
+}
+li.pj_skills_icon {
+    width: 4em;
+    transition: width 0.75s ease;
+}
+li.pj_skills_icon:hover {
+    transition: width 0.5s ease;
+    width: 4.75em;
+}
+.pj_skills_icon a {
+    width: 100%;
+}
+/* ========== END Project Archives Styles ========== */
 /* ========== Blog Styles ========== */
 .blog_header {
     position: relative;
@@ -546,28 +571,6 @@ label {
     display: block;
 }
 /* ========== END Contact Styles ========== */
-/* ========== Project Archives ========== */
-article.projects {
-    position: relative;
-}
-.projects_skills {
-    list-style: none;
-    display: flex;
-    align-items: bottom;
-    position: absolute; /* Prevents article below from shifting on icon hover*/
-}
-li.pj_skills_icon {
-    width: 4em;
-    transition: width 0.75s ease;
-}
-li.pj_skills_icon:hover {
-    transition: width 0.5s ease;
-    width: 4.75em;
-}
-.pj_skills_icon a {
-    width: 100%;
-}
-/* ========== END Project Archives ========== */
 /* ========== 404 Page ========== */
 #post-404 h2 {
     margin: 1rem;
@@ -717,7 +720,6 @@ li.pj_skills_icon:hover {
         flex-wrap: wrap;
         justify-content: flex-start;
     }
-
     .blog main article,
     .pj_view-more_thumbs article {
     	width: 48%;
@@ -733,6 +735,11 @@ li.pj_skills_icon:hover {
         max-width: 700px;
         margin: 4rem auto;
         z-index: 800;
+    }
+    .post-type-archive-projects article {
+        width: 45%;
+        margin-right: 5%;
+        margin-top: 2%;
     }
 }
 /* ========== END Media Query (more than 700px) ========== */
