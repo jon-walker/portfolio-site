@@ -415,6 +415,7 @@ article.projects {
 .projects_skills {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     align-items: bottom;
     position: absolute; /* Prevents article below from shifting on icon hover*/
 }
@@ -428,6 +429,9 @@ li.pj_skills_icon:hover {
 }
 .pj_skills_icon a {
     width: 100%;
+}
+.post-type-archive-projects h2 {
+    margin-top: 0.5rem;
 }
 /* ========== END Project Archives Styles ========== */
 /* ========== Blog Styles ========== */
@@ -818,12 +822,21 @@ label {
         grid-column: 9 / 12;
         margin-top: 1rem;
     }
+    .post-type-archive-projects article {
+        width: 30%;
+        margin-right: 3%;
+        margin-top: 2%;
+    }
 }
 /* ========== END Media Query (more than 1000px) ========== */
 /* ========== Media Query (more than 1300px) ========== */
 @media (min-width: 1400px) {
-    .blog main article {
+    .blog main article,
+    .post-type-archive-projects article {
     	width: 24%;
+    }
+    .post-type-archive-projects article {
+        margin-right:1%;
     }
     .blog_header {
         margin-top: 4rem;
