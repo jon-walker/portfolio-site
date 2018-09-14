@@ -7,9 +7,16 @@
     <header class="blog_header">
         <img class="blog_header_logo" src="<?= get_template_directory_uri(); ?>/img/logo-headers.png" alt="See My Recent Design Projects">
     </header>
-    <!-- Use h1 as container to hold header styles-->
-    <h1><?php the_title(); ?></h1>
 
+
+    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+
+    <div class="blog_featured-img">
+        <?php if ( has_post_thumbnail()) : the_post_thumbnail(); endif; ?>
+    </div>
+
+    <h1><?php the_title(); ?></h1>
     <?php get_template_part('partials/skills');?>
 
     <p class="pj_intro">
@@ -28,10 +35,6 @@
 
     <?php endif;?>
 </main>
-
-<aside class="project_widgets-container">
-    <?php dynamic_sidebar('project-widgets'); ?>
-</aside>
 
 <!-- **** View More Section **** -->
 <aside class="pj_view-more">
@@ -57,11 +60,13 @@
 		<article>
 			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 			<p><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></p>
-			<?php the_excerpt(); ?>
 		</article>
 	<?php $i++; endwhile;
 	endif; ?>
 	</div>
 </aside>
 
+<aside class="project_widgets-container">
+    <?php dynamic_sidebar('project-widgets'); ?>
+</aside>
 <?php get_footer(); ?>
