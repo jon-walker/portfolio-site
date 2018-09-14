@@ -1,16 +1,15 @@
 <?php get_header(); ?>
 
 
+<header class="blog_header">
+    <img class="blog_header_logo" src="<?= get_template_directory_uri(); ?>/img/logo-headers.png" alt="See My Recent Design Projects">
+</header>
+
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 <main>
-    <header class="blog_header">
-        <img class="blog_header_logo" src="<?= get_template_directory_uri(); ?>/img/logo-headers.png" alt="See My Recent Design Projects">
-    </header>
-
 
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
 
     <div class="blog_featured-img">
         <?php if ( has_post_thumbnail()) : the_post_thumbnail(); endif; ?>

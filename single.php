@@ -1,9 +1,10 @@
 <?php get_header(); ?>
 
+    <header class="blog_header">
+        <img class="blog_header_logo" src="<?= get_template_directory_uri(); ?>/img/blog-logo.png" alt="Jonathan Walker Designing Intelligently">
+    </header>
+
 	<main>
-        <header class="blog_header">
-            <img class="blog_header_logo" src="<?= get_template_directory_uri(); ?>/img/blog-logo.png" alt="Jonathan Walker Designing Intelligently">
-        </header>
 
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
