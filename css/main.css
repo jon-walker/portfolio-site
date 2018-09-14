@@ -408,8 +408,7 @@ article {
 /* ========== Blog Styles ========== */
 .blog_header {
     position: relative;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin: 2rem 1rem;
 }
 ul.blog_post-meta {
     list-style: none;
@@ -673,12 +672,12 @@ li.pj_skills_icon:hover {
     	background-color: rgba(2,10,16,.8);
     	position: fixed;
     	top: 0;
-    	z-index: 1;	/*Prevents it from sliding under gallery*/
+    	z-index: 900;	/*Prevents it from sliding under gallery*/
 	}
 	main,
     h1 {
 	    width: 80%;
-	    margin: 10% auto 2%;
+	    margin: 2% auto;
 	}
 	nav ul {
 		padding: 0;
@@ -717,8 +716,9 @@ li.pj_skills_icon:hover {
     	width: 48%;
     }
     .blog_header {
-        margin-top: 2rem;
-        margin-bottom: 4rem;
+        max-width: 700px;
+        margin: 4rem auto;
+        z-index: 800;
     }
 }
 /* ========== END Media Query (more than 700px) ========== */
@@ -757,11 +757,8 @@ li.pj_skills_icon:hover {
     	width: 32%;
     }
     .blog_header {
-        margin-top: 1rem;
-        margin-bottom: 4rem;
         max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
+        z-index:800;
     }
 }
 /* ========== END Media Query (more than 1000px) ========== */

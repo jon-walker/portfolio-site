@@ -1,8 +1,12 @@
 <?php get_header(); ?>
 
+
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 <main>
+    <header class="blog_header">
+        <img class="blog_header_logo" src="<?= get_template_directory_uri(); ?>/img/logo-headers.png" alt="See My Recent Design Projects">
+    </header>
     <!-- Use h1 as container to hold header styles-->
     <h1><?php the_title(); ?></h1>
 
