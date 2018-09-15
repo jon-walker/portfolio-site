@@ -382,12 +382,14 @@ article {
 .blog article p:last-child {
     position: absolute;
 }
-.blog article h2 {
+.blog article h2,
+article h2 {
     top: 1rem;
     left: 1rem;
     font-size: 2rem;
-    line-height: 2rem; /* Black Bamboo font is caps only so descenders don't worry about overlap */
+    line-height: 2.2rem; /* Black Bamboo font is caps only so descenders don't worry about overlap */
     text-shadow: 1px 3px 5px rgba(2, 10, 16, 0.4);
+	margin-top: 0;
 }
 .blog .date {
     bottom: 60%;
@@ -591,6 +593,9 @@ label {
     margin-bottom: 0.25rem;
     display: block;
 }
+.page-id-62 main {
+	max-width: 600px;
+}
 /* ========== END Contact Styles ========== */
 /* ========== 404 Page ========== */
 #post-404 h2 {
@@ -788,12 +793,18 @@ label {
     .logo {
 		margin-top: 18vh;
 	}
+	.page-id-62 main {
+		margin-top: 5rem;
+	}
 }
 /* ========== Media Query (more than 850px)  ========== */
 @media (min-width: 850px) {
 	h2.tagline {
 		font-size: 1.4rem;
         margin-top: 2rem;
+	}
+	.page-id-62 main {
+		margin-top: 10rem;
 	}
 }
 /* ========== END Media Query (more than 850px) ========== */
