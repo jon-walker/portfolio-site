@@ -38,14 +38,17 @@
 <!-- **** View More Section **** -->
 <aside class="pj_view-more">
 	<h2>What Next?</h2>
+    <section>
+        <h3>Let's Talk&hellip;</h3>
+        <ul class="pj_view-more_contact">
+            <li class="phone"><img class="pj_contact-icon" src="<?= get_template_directory_uri();?>/img/phone-icon.png" alt="Phone">904.502.7669</li>
+            <li class="email"><img class="pj_contact-icon" src="<?= get_template_directory_uri();?>/img/email-icon.png" alt="Phone"><a href="mailto:jonwalker85@yahoo.com" target="_blank">jonwalker85@yahoo.com</a></li>
+        </ul>
+    </section>
+
+    <h3>See More Projects</h3>
 	<div class="pj_view-more_thumbs">
-		<section>
-			<h3><a href="<?php echo home_url(); ?>/contact">Let's Talk&hellip;</a></h3>
-			<ul class="pj_view-more_contact">
-				<li class="phone"><img class="pj_contact-icon" src="<?= get_template_directory_uri();?>/img/phone-icon.png" alt="Phone">904.502.7669</li>
-				<li class="email"><img class="pj_contact-icon" src="<?= get_template_directory_uri();?>/img/email-icon.png" alt="Phone"><a href="mailto:jonwalker85@yahoo.com" target="_blank">jonwalker85@yahoo.com</a></li>
-			</ul>
-		</section>
+
 		<!-- Projects Loop -->
 		<?php
 		// Create query

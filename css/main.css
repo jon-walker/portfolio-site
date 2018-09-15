@@ -700,7 +700,7 @@ label {
 		width: 35%;
 		min-width: 220px;
 		max-width: 300px;
-		margin-top: 20vh;
+		margin-top: 10vh;
 	}
     /* Home page */
     .home section:not(.splash),
@@ -727,6 +727,13 @@ label {
     .pj_view-more_thumbs section {
         margin: 1%;
     }
+    ul.pj_view-more_contact {
+        display: flex;
+        margin-bottom: 4rem;
+    }
+    ul.pj_view-more_contact li + li {
+        margin-left: 2rem;
+    }
     .blog_header {
         max-width: 700px;
         margin: 4rem auto;
@@ -737,12 +744,22 @@ label {
         margin-right: 5%;
         margin-top: 2%;
     }
+    .pj_view-more_thumbs article h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
 }
 /* ========== END Media Query (more than 700px) ========== */
+@media (orientation: portrait) and (min-width: 700px) {
+    .logo {
+		margin-top: 18vh;
+	}
+}
 /* ========== Media Query (more than 850px)  ========== */
 @media (min-width: 850px) {
 	h2.tagline {
 		font-size: 1.4rem;
+        margin-top: 2rem;
 	}
 }
 /* ========== END Media Query (more than 850px) ========== */
@@ -761,7 +778,7 @@ label {
 		margin: auto;
 	}
 	.logo {
-		width: 30%;
+		width: 25%;
 		min-width: 300px;
 		max-width: 380px;
 	}
@@ -790,8 +807,10 @@ label {
         padding-top: 0;
     }
     .pj_view-more article {
-        width: 23%;
-        margin-left: 2%;
+        width: 30%;
+    }
+    .pj_view-more article + article {
+        margin-left: 3%;
     }
 	.single {
         display: grid;
