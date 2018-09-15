@@ -24,7 +24,6 @@
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
 		<header class="main-menu">
-            <p class="nav-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-icon.png" alt="logo" title="logo"></p>
             <div class="hamburger__close nav_hide">
         		<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs> <style>fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3px;</style></defs><title>close</title><line class="cls-1" x1="3.76" y1="12.24" x2="12.24" y2="3.76"/><line class="cls-1" x1="12.24" y1="12.24" x2="3.76" y2="3.76"/></svg>
       		</div>
