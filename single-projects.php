@@ -2,7 +2,7 @@
 
 
 <header class="blog_header">
-    <img class="blog_header_logo" src="<?= get_template_directory_uri(); ?>/img/logo-headers.png" alt="See My Recent Design Projects">
+    <img class="blog_header_logo" src="<?= get_template_directory_uri(); ?>/img/projects-logo.png" alt="See My Recent Design Projects">
 </header>
 
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
