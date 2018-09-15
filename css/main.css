@@ -86,6 +86,9 @@ input#submit,
 .home_cta_buttons {
     margin-top: 1rem;
 }
+* + h2 {
+	margin-top: 4rem;
+}
 ul {
 	margin: 1% 0;
 }
@@ -113,6 +116,9 @@ textarea {
 }
 img {
 	width: 100%;
+}
+.single figure {
+	margin: 2rem;
 }
 /* ========== END Basic Layout and Spacing ========== */
 /* ========== Links Styles========== */
@@ -521,6 +527,11 @@ footer.blog_footer,
 footer.blog_footer {
     background-color: rgba(205, 200, 220, 0.5);
 }
+.single .wp-block-image .alignleft,
+.single .wp-block-image .alignright {
+	float: none;
+	margin: 4rem auto 0 auto;
+}
 /* ========== END Blog Styles ========== */
 /* ========== Contact Styles ========== */
 .contact_intro,
@@ -748,6 +759,14 @@ label {
         font-size: 1rem;
         margin-bottom: 0.5rem;
     }
+	.single .wp-block-image .alignleft {
+		margin-right: 2.5rem;
+		float: left;
+	}
+	.single .wp-block-image .alignright {
+		margin-left: 2.5rem;
+		float: right;
+	}
 }
 /* ========== END Media Query (more than 700px) ========== */
 @media (orientation: portrait) and (min-width: 700px) {
