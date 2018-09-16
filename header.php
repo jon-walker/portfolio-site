@@ -11,6 +11,7 @@
 		<!-- End Google Tag Manager -->
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
         <link href="<?php echo get_template_directory_uri(); ?>/img/favicon.png" rel="shortcut icon">
+        <link href="https://fonts.googleapis.com/css?family=Hind:300" rel="stylesheet">
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
