@@ -1,4 +1,3 @@
-//@prepros-prepend unitegallery.js
 //@prepros-prepend jquery.smooth-scroll.js
 
 $(document).ready( function(){
