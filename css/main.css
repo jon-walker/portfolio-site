@@ -392,6 +392,7 @@ li.email a:link {
 }
 /* ========== END Project Styles ========== */
 /* ========== Blog Index Styles ========== */
+.search-results main,
 .blog main,
 .post-type-archive-projects main {
     display: flex;
@@ -402,16 +403,20 @@ article {
     position: relative;
 	overflow: hidden;
 }
+.search-results main article,
 .blog main article {
     margin: 0.25% 0.5%;
 	width: 100%;
 }
 /* Hover FX */
+.search-results article h2,
+.search-results .date,
 .blog article h2,
 .blog .date,
 .blog article p:last-child {
     position: absolute;
 }
+.search-results article h2,
 .blog article h2,
 .post-type-archive-projects article h2 {
     top: 1rem;
@@ -493,6 +498,35 @@ li.pj_skills_icon:hover {
     margin-top: 0.5rem;
 }
 /* ========== END Project Archives Styles ========== */
+/* ========== Search Results Styles ========== */
+/* Many of the applicable styles are shared with Blog Index styles */
+.search-results article {
+    min-height: 300px;
+    background: rgba(63, 73, 64, 0.2);
+    margin: 0.5rem;
+}
+.search-results article h2 {
+    font-family: 'Hind', sans-serif;
+    font-size: 1.5rem;
+}
+.search-results article img {
+    display: none;
+}
+.search-results article .date {
+    top: 32%;
+    padding: 0.5rem 1rem;
+    background: rgb(21, 41, 22);
+    border-radius: 0 10px 10px 0;
+}
+.search-results .type-page p:not(.date),
+.search-results .type-projects p:not(.date),
+.search-results .type-post p:not(.date) {
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    padding: 1rem;
+}
+/* ========== END Search Results Styles ========== */
 /* ========== Blog Styles ========== */
 .blog_header {
     position: relative;
@@ -886,6 +920,7 @@ label {
 		padding-right: 1%;
 		vertical-align: middle;
 	}
+    .search-results main article,
     .blog main article {
     	width: 32%;
     }
@@ -946,6 +981,7 @@ label {
 /* ========== END Media Query (more than 1000px) ========== */
 /* ========== Media Query (more than 1300px) ========== */
 @media (min-width: 1400px) {
+    .search-results main article,
     .blog main article,
     .post-type-archive-projects article {
     	width: 24%;
