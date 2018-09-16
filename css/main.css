@@ -171,8 +171,8 @@ button:hover,
 input#submit:hover,
 input[type="button"]:hover,
 .button a:hover {
-    filter: invert(30%);
-    transition: filter 0.25s;
+    color: rgb(63, 73, 64);
+    border-color: rgb(63, 73, 64);
 }
 .button a:active,
 input#submit:active,
