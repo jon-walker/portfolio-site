@@ -194,6 +194,7 @@ nav ul {
 nav ul li {
 	display: inline;
 	padding: 0 2%;
+    margin-left: 0
 }
 nav ul li a:link,
 nav ul li a:visited {
@@ -211,7 +212,7 @@ nav ul li a:active {
     justify-content: center;
 }
 nav {
-    width: 60%;
+    width: 100%;
 }
 /* ========== END Nav Styles ========== */
 /* ======== Hamburger Menu Styles ========*/
