@@ -32,7 +32,7 @@ To keep a consistent look, certain images on the page should have the following 
 ## Color Palette
 
 * black = rgb(2,10,16)
-* white = rgb(254,254,254)
+* white = rgb(228,225,221)
 * yellow accents = rgb(244,182,61)
 * green - rgb(21,41,22)
 

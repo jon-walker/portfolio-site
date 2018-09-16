@@ -26,20 +26,20 @@ body {
 /* ========== END GLOBAL STYLES AND RESET RULES ========== */
 /* ========== Typography ========== */
 body {
-    font-family: 'quattrocento', sans-serif;
-    color: rgb(254,254,254);
+    font-family: 'Hind', sans-serif;
+    color: rgb( 228, 225, 221);
     line-height: 1.4rem
 }
 h1,
 h2,
 .home_action_text,
 .home_cta {
-    font-family: 'black-bamboo', 'quattrocento', sans-serif;
+    font-family: 'black-bamboo', 'Hind', sans-serif;
     color: rgb(244,182,61);
 }
 h2,
 h3 {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	margin-bottom: 1.5rem;
 }
 p {
@@ -47,6 +47,10 @@ p {
 }
 h2 a {
 	text-decoration: none;
+}
+li {
+    list-style-type: circle;
+    margin-left: 3rem;
 }
 /* ========== END Typography ========== */
 /* ========== Basic Layout and Spacing ========== */
@@ -90,7 +94,7 @@ input#submit,
 	margin-top: 4rem;
 }
 ul {
-	margin: 1% 0;
+	margin: 2rem 0;
 }
 ol {
 	margin: 0 3% 3%;
@@ -126,7 +130,7 @@ a:link {
 	color: rgb(244,182,61);
 }
 a:hover {
-    color: rgb(254,254,254);
+    color: rgb( 228, 225, 221);
 }
 a:visited,
 a:active {
@@ -149,7 +153,7 @@ input[type="button"],
     border: solid 3px rgb(244, 182, 61);
     background: none;
     color: rgb(244, 182, 61);
-    font-family: 'black-bamboo','quattrocento', sans-serif;
+    font-family: 'black-bamboo','Hind', sans-serif;
     transition: color 1s border 1s filter 0.5s;
     text-align: center;
     display:block;
@@ -194,7 +198,7 @@ nav ul li a:visited {
 }
 nav ul li a:hover,
 nav ul li a:active {
-	color: rgb(254,254,254);
+	color: rgb( 228, 225, 221);
     text-decoration: underline;
 }
 .main-menu {
@@ -308,9 +312,9 @@ img.thumb {
     position: relative;
 }
 .tagline {
-	font-family: 'quattrocento', sans-serif;
+	font-family: 'Hind', sans-serif;
 	font-size: 1.1rem;
-	color: rgb(254,254,254);
+	color: rgb( 228, 225, 221);
 	margin: 10% 0 20%;
 	text-align: center;
 }
@@ -343,7 +347,7 @@ li.email {
     justify-content: flex-start;
 }
 li.email a:link {
-    color: rgb(254, 254, 254);
+    color: rgb( 228, 225, 221);
 }
 .pj_view-more_thumbs article h3 {
 	width: 100%;
@@ -383,7 +387,7 @@ article {
     position: absolute;
 }
 .blog article h2,
-article h2 {
+.post-type-archive-projects article h2 {
     top: 1rem;
     left: 1rem;
     font-size: 2rem;
@@ -420,6 +424,18 @@ article h2 {
 .blog article:hover p:last-child {
     transition: left 0.5s;
 }
+.blog_post-meta li {
+    list-style-type: none;
+    margin-bottom: 4rem;
+}
+iframe {
+    margin: 2rem;
+}
+pre {
+    padding: 2rem;
+    margin: 2rem;
+    border-left: solid 5px rgb(21, 41, 22);
+}
 /* ========== END Blog Index Styles ========== */
 /* ========== Project Archives Styles========== */
 /* Note: Blog & Projects indexes share many styles */
@@ -432,8 +448,11 @@ article.projects {
     flex-wrap: wrap;
     align-items: bottom;
     position: absolute; /* Prevents article below from shifting on icon hover*/
+    margin-top: 1rem;
 }
 li.pj_skills_icon {
+    list-style-type: none;
+    margin-left: 0;
     width: 4em;
     transition: width 0.75s ease;
 }
@@ -455,7 +474,7 @@ li.pj_skills_icon:hover {
 }
 ul.blog_post-meta {
     list-style: none;
-    margin-bottom: 2rem;
+    margin: 0;
 }
 .blog_footer,
 .blog_comments {
@@ -496,7 +515,7 @@ ul.children { /* Replies to other comments */
 }
 .comment_text {
     padding: 1rem;
-    background: rgb(254,254,254);
+    background: rgb( 228, 225, 221);
     color: rgb(2, 10, 16);
     border-radius: 8px;
     margin-top: 1.5rem;
@@ -506,7 +525,7 @@ ul.children { /* Replies to other comments */
     content: '';
     width: 0;
     height: 0;
-    border-bottom: 15px solid rgb(254,254,254);
+    border-bottom: 15px solid rgb( 228, 225, 221);
     border-right: 20px solid transparent;
     border-left: 2px solid transparent;
     position: absolute;
@@ -605,19 +624,19 @@ label {
 /* ========== Media Query (more than 450px) ========== */
 @media (min-width: 450px) {
     .blog_featured-img {
-        width: 8rem;
+        width: 7rem;
     }
     .blog_featured-img img {
         box-shadow: inset 2px 3px 5px rgba(2, 10, 16, 0.5);
     }
     .single-projects h1,
     .single h1 {
-        width: calc(100% - 8rem);
-        height: 8rem;
+        width: calc(100% - 7rem);
+        height: 7rem;
         margin: 0;
         position: absolute;
         top: 0;
-        left: 8rem;
+        left: 7rem;
         font-size: 2rem;
         line-height: 2.3rem;
         background: url(../img/star-fade-bkg.jpg) no-repeat;
@@ -680,7 +699,7 @@ label {
         width: 40%;
         padding: 0.5rem;
         margin: 1rem 0 2rem;
-        font-family: 'quattrocento', sans-serif;
+        font-family: 'Hind', sans-serif;
     }
     .home_cta_buttons .button a {
         vertical-align: middle;
@@ -766,8 +785,9 @@ label {
         margin-left: 2rem;
     }
     .blog_header {
-        max-width: 700px;
-        margin: 4rem auto;
+        width: 50%;
+        max-width: 600px;
+        margin: 3rem auto;
         z-index: 800;
     }
     .post-type-archive-projects article {
@@ -860,12 +880,13 @@ label {
 	.single {
         display: grid;
         grid-template-columns: repeat( 12, 1fr);
-        grid-template-rows: 300px auto auto auto;
+        grid-template-rows: 15% auto auto auto;
         grid-column-gap: 3rem;
     }
     .blog_header {
         grid-row: 1 / 2;
         grid-column: 2 / 12;
+        width: 40%;
     }
     .single main,
     .single aside {
