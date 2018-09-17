@@ -305,7 +305,7 @@ section.splash p {
 .home_call-to-action {
     width: 100%;
     position: absolute;
-    top: calc(100vh - 8rem);
+    top: calc(90vh - 8rem);
 }
 p.home_action_text a:link {
 	text-decoration: none;
@@ -330,7 +330,7 @@ img.thumb {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	min-height: 100vh;
+	min-height: 90vh;
     position: relative;
 }
 .tagline {
