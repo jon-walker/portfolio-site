@@ -355,6 +355,7 @@ img.arrow-bounce {
 .single-projects h1,
 .single h1 {
     margin: 1.1rem 0;
+    font-size: 2.2rem;
 }
 .post-type-archive-projects article {
     padding-bottom: 5rem; /* Prevents img from covering skill icons */
@@ -367,16 +368,18 @@ li.email {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin-left: 0;
 }
 li.email a:link {
     color: rgb( 228, 225, 221);
 }
 .pj_view-more_thumbs article h3 {
-	width: 100%;
+	width: 100.5%; /* Fixes little gap in gradient */
 	height: 6rem;
     padding: 1rem 0.5rem;
     position: absolute;
     top: 0;
+    font-size: 1.1rem;
 	background: -moz-linear-gradient(top, rgba(2,10,16,0.9) 0%, rgba(2,10,16,0.8) 60%, rgba(2,10,16,0) 100%);
 	background: -webkit-linear-gradient(top, rgba(2,10,16,0.9) 0%,rgba(2,10,16,0.8) 60%,rgba(2,10,16,0) 100%);
 	background: linear-gradient(to bottom, rgba(2,10,16,0.9) 0%,rgba(2,10,16,0.8) 60%,rgba(2,10,16,0) 100%);
@@ -420,8 +423,8 @@ article {
 .post-type-archive-projects article h2 {
     top: 1rem;
     left: 1rem;
-    font-size: 2rem;
-    line-height: 2.2rem; /* Black Bamboo font is caps only so descenders don't worry about overlap */
+    font-size: 1.6rem;
+    line-height: 2rem; /* Black Bamboo font is caps only so descenders don't worry about overlap */
     text-shadow: 1px 3px 5px rgba(2, 10, 16, 0.4);
 	margin-top: 0;
 }
@@ -496,6 +499,10 @@ li.pj_skills_icon:hover {
 .post-type-archive-projects h2 {
     margin-top: 0.5rem;
 }
+.search-results .date,
+.post-type-archive-projects .date {
+    color: rgb(146, 143, 139);
+}
 /* ========== END Project Archives Styles ========== */
 /* ========== Search Results Styles ========== */
 /* Many of the applicable styles are shared with Blog Index styles */
@@ -565,7 +572,7 @@ li.comment {
     margin-top: 3rem;
 }
 .single aside {
-    background-color: rgba(21, 41, 22, 0.3);
+    background-color: rgba(21, 41, 22, 0.9);
     width: 90%;
     margin: 2rem auto;
 }
