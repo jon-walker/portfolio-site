@@ -231,6 +231,9 @@ footer {
 footer p {
     margin: 1rem;
 }
+body > div#a2a_share_save_widget-5 {
+    display: none;
+}
 /* ========== END Footer Styles ========== */
 /* ======== Hamburger Menu Styles ========*/
 .hamburger,
@@ -883,7 +886,7 @@ label {
 /* ========== END Media Query (more than 700px) ========== */
 @media (orientation: portrait) and (min-width: 700px) {
     .logo {
-		margin-top: 18vh;
+		margin-top: 15vh;
 	}
 	.page-id-62 main {
 		margin-top: 5rem;
