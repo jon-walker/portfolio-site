@@ -12,7 +12,7 @@ $(document).ready( function(){
       $(".hamburger__close").toggleClass("nav_hide");
 
       // Toggle class mobile_nav_display from nav
-      $("nav#main-menu").toggleClass("mobile-nav_display");
+      $("nav#mainMenu").toggleClass("mobile-nav_display");
 
     });
 
@@ -27,7 +27,7 @@ $(document).ready( function(){
       $(".hamburger__close").toggleClass("nav_hide");
 
       // Toggle class mobile_nav_display from nav
-      $("nav#main-menu").toggleClass("mobile-nav_display");
+      $("nav#mainMenu").toggleClass("mobile-nav_display");
 
     });
 
