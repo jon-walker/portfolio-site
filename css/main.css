@@ -350,6 +350,9 @@ img.arrow-bounce {
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 }
+.home_skill_title {
+    margin-top: 0;
+}
 /* ========== END Home Styles  ========== */
 /* ========== Project Styles  ========== */
 .single-projects h1,
