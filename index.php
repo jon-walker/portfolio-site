@@ -9,6 +9,4 @@
     	<?php get_template_part('partials/pagination'); ?>
     </main>
 
-<?php dynamic_sidebar('blog-widgets'); ?>
-
 <?php get_footer(); ?>

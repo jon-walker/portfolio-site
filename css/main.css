@@ -148,12 +148,16 @@ a:active {
 /* ========== Button Styles ========== */
 button,
 input#submit,
-input[type="button"] {
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
     padding: 0.5rem;
 }
 button,
 input#submit,
 input[type="button"],
+input[type="submit"],
+input[type="reset"],
 .button a:link,
 .button a:visited {
     padding: 0.5rem;
@@ -169,6 +173,8 @@ input[type="button"],
 button:hover,
 input#submit:hover,
 input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
 .button a:hover {
     color: rgb(63, 73, 64);
     border-color: rgb(63, 73, 64);
@@ -176,6 +182,8 @@ input[type="button"]:hover,
 .button a:active,
 input#submit:active,
 input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
 button:active {
     color: #000;
     border-color: rgb(2, 10, 16);
