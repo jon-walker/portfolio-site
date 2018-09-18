@@ -441,6 +441,10 @@ pre {
     margin: 2rem;
     border-left: solid 5px rgb(21, 41, 22);
 }
+.blog_widgets-container * + div,
+.project_widgets-container * + div {
+    margin-top: 3rem;
+}
 /* ========== END Blog Index Styles ========== */
 /* ========== Project Archives Styles========== */
 /* Note: Blog & Projects indexes share many styles */
