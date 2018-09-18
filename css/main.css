@@ -465,7 +465,10 @@ article {
 }
 .blog_post-meta li {
     list-style-type: none;
-    margin-bottom: 4rem;
+    margin: 0;
+}
+.blog_post-meta li:last-child {
+    margin-bottom: 1.5rem;
 }
 pre {
     padding: 2rem;
@@ -715,13 +718,6 @@ label {
         text-shadow: 1px 1px 4px rgba(50, 50, 50, 0.3);
         box-shadow: 2px 3px 5px rgba(2, 10, 16, 0.5);
     }
-    ul.blog_post-meta {
-        display: flex;
-        justify-content: flex-start;
-    }
-    ul.blog_post-meta li + li {
-        margin-left: 1.5rem;
-    }
     .single aside {
         width: 80%;
     }
@@ -783,8 +779,19 @@ label {
     .single-projects .projects_skills {
         display: flex;
     }
+    ul.blog_post-meta {
+        display: flex;
+        justify-content: flex-start;
+    }
+    ul.blog_post-meta li {
+        margin-bottom: 4rem;
+        margin-left: 0;
+    }
+    ul.blog_post-meta li + li {
+        margin-left: 1rem;
+    }
 }
-/* ========== END Media Query (more than 450px) ========== */
+/* ========== END Media Query (more than 550px) ========== */
 /* ========== Media Query (more than 700px)  ========== */
 @media (min-width: 700px) {
 	header {
