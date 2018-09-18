@@ -1,4 +1,5 @@
 //@prepros-prepend jquery.smooth-scroll.js
+//@prepros-prepend jquery.fitvids.js
 
 $(document).ready( function(){
 
@@ -33,5 +34,10 @@ $(document).ready( function(){
 
     // ACTIVATE SMOOTH SCROLL
     $("a").smoothScroll({speed: 700,});
+
+    // ACTIVATE RESPONSIVE VIDEOS - Uses FitVids.js
+    // See https://github.com/davatron5000/FitVids.js/releases
+
+    $(".video").fitVids();
 
 })

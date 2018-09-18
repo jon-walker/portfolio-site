@@ -29,6 +29,10 @@ To keep a consistent look, certain images on the page should have the following 
 * Project Section Images - 4:3 (Classic Video)
     * Add background (rgb: 2, 10, 16) to "empty" areas if different aspect is absolutely needed.
 
+## Responsive Videos
+
+When embedding videos from Youtube, Vimeo, etc. wrap them in a div with the class videos. This will signal the JS to make that video responsive.
+
 ## Color Palette
 
 * black = rgb(2,10,16)
