@@ -69,6 +69,8 @@
 
 	</main>
 
-<?php get_sidebar(); ?>
+    <aside class="blog_widgets-container">
+        <?php dynamic_sidebar('blog-widgets'); ?>
+    </aside>
 
 <?php get_footer(); ?>

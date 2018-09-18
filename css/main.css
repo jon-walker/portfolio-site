@@ -357,48 +357,6 @@ img.arrow-bounce {
     margin-top: 0;
 }
 /* ========== END Home Styles  ========== */
-/* ========== Project Styles  ========== */
-.single-projects h1,
-.single h1 {
-    margin: 1.1rem 0;
-    font-size: 2.2rem;
-}
-.post-type-archive-projects article {
-    padding-bottom: 5rem; /* Prevents img from covering skill icons */
-}
-img.pj_contact-icon {
-    width: 4rem;
-}
-li.phone,
-li.email {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-left: 0;
-}
-li.email a:link {
-    color: rgb( 228, 225, 221);
-}
-.pj_view-more_thumbs article h3 {
-	width: 100.5%; /* Fixes little gap in gradient */
-	height: 6rem;
-    padding: 1rem 0.5rem;
-    position: absolute;
-    top: 0;
-    font-size: 1.1rem;
-	background: -moz-linear-gradient(top, rgba(2,10,16,0.9) 0%, rgba(2,10,16,0.8) 60%, rgba(2,10,16,0) 100%);
-	background: -webkit-linear-gradient(top, rgba(2,10,16,0.9) 0%,rgba(2,10,16,0.8) 60%,rgba(2,10,16,0) 100%);
-	background: linear-gradient(to bottom, rgba(2,10,16,0.9) 0%,rgba(2,10,16,0.8) 60%,rgba(2,10,16,0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6020a10', endColorstr='#00020a10',GradientType=0 );
-}
-.pj_view-more_thumbs article h3 a {
-	width: 100%;
-	height: 100%;
-}
-.single-projects .projects_skills {
-    display: none;
-}
-/* ========== END Project Styles ========== */
 /* ========== Blog Index Styles ========== */
 .search-results main,
 .blog main,
@@ -539,6 +497,48 @@ li.pj_skills_icon:hover {
     padding: 1rem;
 }
 /* ========== END Search Results Styles ========== */
+/* ========== Project Styles  ========== */
+.single-projects h1,
+.single h1 {
+    margin: 1.1rem 0;
+    font-size: 2.2rem;
+}
+.post-type-archive-projects article {
+    padding-bottom: 5rem; /* Prevents img from covering skill icons */
+}
+img.pj_contact-icon {
+    width: 4rem;
+}
+li.phone,
+li.email {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 0;
+}
+li.email a:link {
+    color: rgb( 228, 225, 221);
+}
+.pj_view-more_thumbs article h3 {
+	width: 100.5%; /* Fixes little gap in gradient */
+	height: 6rem;
+    padding: 1rem 0.5rem;
+    position: absolute;
+    top: 0;
+    font-size: 1.1rem;
+	background: -moz-linear-gradient(top, rgba(2,10,16,0.9) 0%, rgba(2,10,16,0.8) 60%, rgba(2,10,16,0) 100%);
+	background: -webkit-linear-gradient(top, rgba(2,10,16,0.9) 0%,rgba(2,10,16,0.8) 60%,rgba(2,10,16,0) 100%);
+	background: linear-gradient(to bottom, rgba(2,10,16,0.9) 0%,rgba(2,10,16,0.8) 60%,rgba(2,10,16,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6020a10', endColorstr='#00020a10',GradientType=0 );
+}
+.pj_view-more_thumbs article h3 a {
+	width: 100%;
+	height: 100%;
+}
+.single-projects .projects_skills {
+    display: none;
+}
+/* ========== END Project Styles ========== */
 /* ========== Blog Styles ========== */
 .blog_header {
     position: relative;
@@ -978,7 +978,7 @@ label {
         grid-row: 2 / 4;
         grid-column: 2 / span 7;
     }
-    .single .sidebar,
+    .single .blog_widgets-container,
     .single .project_widgets-container {
         grid-row: 2 / 3;
         grid-column: 9 / 12;
@@ -1027,7 +1027,7 @@ label {
         grid-row: 2 / 4;
         grid-column: 3 / span 7;
     }
-    .single .sidebar,
+    .single .blog_widgets-container,
     .single .project_widgets-container {
         grid-row: 2 / 3;
         grid-column: 10 / 12;
