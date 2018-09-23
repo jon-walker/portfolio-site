@@ -550,11 +550,18 @@ li.email a:link {
 .single-projects .projects_skills {
     display: none;
 }
+/* RL Gallery */
 li.sy-prev,
 li.sy-next,
 li.rl-gallery-item {
 	list-style-type: none;
 	margin-left: 0;
+}
+.rl-gallery .rl-gallery-link img {
+	height:unset;
+}
+.rl-gallery-container {
+	max-width: 1000px;
 }
 /* ========== END Project Styles ========== */
 /* ========== Blog Styles ========== */
