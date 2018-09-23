@@ -550,6 +550,11 @@ li.email a:link {
 .single-projects .projects_skills {
     display: none;
 }
+li.sy-prev,
+li.sy-next {
+	list-style-type: none;
+	margin-left: 0;
+}
 /* ========== END Project Styles ========== */
 /* ========== Blog Styles ========== */
 .blog_header {
