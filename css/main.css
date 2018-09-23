@@ -551,7 +551,8 @@ li.email a:link {
     display: none;
 }
 li.sy-prev,
-li.sy-next {
+li.sy-next,
+li.rl-gallery-item {
 	list-style-type: none;
 	margin-left: 0;
 }
