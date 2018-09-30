@@ -18,6 +18,9 @@
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary, input, select, textarea, label {
     display:block;
 }
+* + * {
+	margin-top: 1rem;
+}
 body {
 	background-color: rgb(2,10,16);
 	position: relative;
@@ -87,12 +90,7 @@ h1 {
 main h1 {
 	margin-left: 0;
 }
-p + p,
-form,
-input#submit,
-.home_cta_buttons {
-    margin-top: 1rem;
-}
+
 * + h2 {
 	margin-top: 4rem;
 }
@@ -131,6 +129,17 @@ img {
 }
 .single figure {
 	margin: 2rem;
+}
+/* Exceptions to default global top-margin (line 21) */
+body,
+.main-menu,
+#mainMenu,
+.hamburger,
+.addtoany_list a,
+.pj_view-more_contact li,
+.pj_view-more_contact li a,
+.pj_view-more_thumbs p {
+	margin-top: 0;
 }
 /* ========== END Basic Layout and Spacing ========== */
 /* ========== Links Styles========== */
@@ -226,6 +235,7 @@ nav ul li a:active {
 nav {
     width: 100%;
 }
+
 /* ========== END Nav Styles ========== */
 /* ======== Footer Styles ========*/
 footer {
@@ -462,6 +472,7 @@ article.projects {
 li.pj_skills_icon {
     list-style-type: none;
     margin-left: 0;
+	margin-top: 0;
     width: 4em;
     transition: width 0.75s ease;
 }
