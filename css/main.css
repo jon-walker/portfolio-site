@@ -996,7 +996,7 @@ label {
 	.single {
         display: grid;
         grid-template-columns: repeat( 12, 1fr);
-        grid-template-rows: 15% auto auto auto;
+        grid-template-rows: 5% auto auto auto;
         grid-column-gap: 3rem;
     }
     .blog_header {
