@@ -996,7 +996,7 @@ label {
 	.single {
         display: grid;
         grid-template-columns: repeat( 12, 1fr);
-        grid-template-rows: 15% auto auto auto;
+        grid-template-rows: 3% auto auto auto;
         grid-column-gap: 3rem;
     }
     .blog_header {
@@ -1031,7 +1031,7 @@ label {
     }
 }
 /* ========== END Media Query (more than 1000px) ========== */
-/* ========== Media Query (more than 1300px) ========== */
+/* ========== Media Query (more than 1400px) ========== */
 @media (min-width: 1400px) {
     .search-results main article,
     .blog main article,
@@ -1047,6 +1047,7 @@ label {
     }
     .single {
         grid-column-gap: 2rem;
+		grid-template-rows: 5% auto auto auto;
     }
     .single .pj_view-more {
         grid-column: 3 / span 7;
