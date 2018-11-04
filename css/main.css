@@ -996,7 +996,7 @@ label {
 	.single {
         display: grid;
         grid-template-columns: repeat( 12, 1fr);
-        grid-template-rows: 3% auto auto auto;
+        grid-template-rows: auto auto auto auto;
         grid-column-gap: 3rem;
     }
     .blog_header {
@@ -1047,7 +1047,7 @@ label {
     }
     .single {
         grid-column-gap: 2rem;
-		grid-template-rows: 5% auto auto auto;
+		grid-template-rows: auto auto auto auto;
     }
     .single .pj_view-more {
         grid-column: 3 / span 7;
